@@ -1,0 +1,40 @@
+body{
+display: grid;
+grid-template-areas: 
+"HEAD HEAD HEAD HEAD"
+"NAV NAV NAV NAV"
+"- SPON SPON SPON"
+"- DESC DESC DESC"
+"- MAIN MAIN MAIN"
+"- GALL GALL GALL"
+"- CONT FORM FORM"
+"FOOT FOOT FOOT FOOT";
+}
+.H{
+    grid-area: HEAD;
+}
+.N {
+    grid-area: NAV;
+}
+.Rela {
+    grid-area: SPON;
+}
+.M {
+    grid-area: MAIN;
+}
+.Desc{
+    grid-area: DESC;
+}
+
+.FOR {
+    grid-area: FORM;
+}
+.C {
+    grid-area: CONT;
+}
+.F{
+grid-area: FOOT;
+}
+.Gallery{
+    grid-area: GALL;
+}
