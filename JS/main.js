@@ -4,12 +4,17 @@ window.addEventListener("load", function (event) {
     .then(response => response.json())
     .then(RYC => {
     //Info de RYC
+    this.document.getElementById("Dir").innerText = RYC.Direction;
+    this.document.getElementById("Tel").innerText = RYC.Tel;
+    this.document.getElementById("Mail").innerText = RYC.Correo;
+    const LogoRYC = document.getElementById("logo");
+    LogoRYC.src = RYC.Logo;
 
-    company.services.forEach(services => {
+
+    RYC.services.forEach(services => {
      //Servicios
-
     });
-    company.sponsors.forEach(sponsors =>{
+    RYC.sponsors.forEach(sponsors =>{
         //Marcas Relacionadas
     });
 
