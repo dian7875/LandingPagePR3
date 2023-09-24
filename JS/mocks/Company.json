@@ -1,0 +1,77 @@
+
+{
+    "id":1,
+    "img":"https://scontent.fsyq1-1.fna.fbcdn.net/v/t39.30808-6/277462402_108732535127058_646574890192178384_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=a2f6c7&_nc_ohc=YKzfXFlCC9cAX_43P5v&_nc_ht=scontent.fsyq1-1.fna&oh=00_AfDV4olHt0ucbrO1fEUEWYyhzF9v469bb4iz5kCGJpYY_w&oe=6513D6D3"    ,
+    "companyName":"Climatizadora RyC",
+    "description":"Servicio de calefaccion Ventilacion y Aire Acondicionado",
+    "services":[
+        {
+          "id":"1",
+          "ico":"https://cdn-icons-png.flaticon.com/512/6794/6794826.png",
+          "description":"Instalacion De Aire Acondiconado"
+        },
+        {
+          "id": "2",
+          "ico":"https://cdn2.iconfinder.com/data/icons/conditioner-service/100/Technical_maintenance_of_conditioners-04-512.png",
+          "description": "Mantenimientos"
+        },
+        {
+          "id": "3",
+          "ico":"https://cdn1.iconfinder.com/data/icons/car-parts-and-accessories-volume-01/32/air-circulation-ac-conditioning-car-recycle-part-512.png",
+          "description": "Recarga De Aire Acondicionado Automotriz"
+        },
+        {
+          "id": "4",
+          "ico":"https://cdn1.iconfinder.com/data/icons/car-parts-and-accessories-volume-01/32/air-circulation-ac-conditioning-car-recycle-part-512.png",
+          "description": "Recarga De Aire Acondicionado Automotriz"
+        },
+        {
+          "id": "5",
+          "ico":"https://cdn1.iconfinder.com/data/icons/car-parts-and-accessories-volume-01/32/air-circulation-ac-conditioning-car-recycle-part-512.png",
+          "description": "Venta de equipos de A/C"
+        }
+
+      ],
+      "sponsors":[
+        {
+        "id": "1",
+        "ico":"https://www.meu-semiconductor.eu/wp-content/uploads/2022/06/mitsubishi-electric-logo.png",
+        "description": "Mitsubishi Electric"
+      },
+      {
+        "id": "2",
+        "ico":"https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Logo_of_the_Carrier_Corporation.svg/1200px-Logo_of_the_Carrier_Corporation.svg.png",
+        "description": "Carrier"
+      },{
+        "id": "3",
+        "ico":"https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/LG_logo_%282015%29.svg/2560px-LG_logo_%282015%29.svg.png",
+        "description": "LG"
+      },{
+        "id": "4",
+        "ico":"https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Samsung_Logo.svg/1000px-Samsung_Logo.svg.png",
+        "description": "Samsung"
+      },
+      {
+        "id": "5",
+        "ico":"https://1000marcas.net/wp-content/uploads/2021/05/Daikin-Logo.png",
+        "description": "Daikin"
+      },
+      {
+        "id": "6",
+        "ico": "",
+        "description": "Beirute"
+      },
+      {
+        "id": "7",
+        "ico":"",
+        "description": "RefriMundo"
+      },
+      {
+        "id": "8",
+        "ico":"https://logos-world.net/wp-content/uploads/2023/01/Hi-Tec-Logo-before-2005.png",
+        "description": "Hi-Tec"
+      }
+
+      ]
+    
+}
