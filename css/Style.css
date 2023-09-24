@@ -1,40 +1,125 @@
-body{
-display: grid;
-grid-template-areas: 
-"HEAD HEAD HEAD HEAD"
-"NAV NAV NAV NAV"
-"- SPON SPON SPON"
-"- DESC DESC DESC"
-"- MAIN MAIN MAIN"
-"- GALL GALL GALL"
-"- CONT FORM FORM"
-"FOOT FOOT FOOT FOOT";
+:root {
+  --black: #000;
+  --blue-light: #c4e1e7;
+  --white:#ffff;
+  --blue:#77c3cf;
+  
 }
-.H{
-    grid-area: HEAD;
+* {
+  margin: 0;
+  padding: 0;
 }
+body {
+
+  display: grid;
+  grid-template-areas:
+    "HEAD HEAD HEAD HEAD"
+    "NAV NAV NAV NAV"
+    "- SPON SPON SPON"
+    "- DESC DESC DESC"
+    "- MAIN MAIN MAIN"
+    "- GALL GALL GALL"
+    "- CONT FORM FORM"
+    "FOOT FOOT FOOT FOOT";
+    font-family: 'Montserrat', sans-serif;
+}
+.H {
+  grid-area: HEAD;
+  background-color: var(--black);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 5vh;
+}
+
+.header-contacts {
+  display: flex;
+ 
+  gap: 50px;
+}
+.header-contacts-items {
+  display: flex;
+  justify-content: center;
+
+  
+}
+span{
+    color: var(--white);
+}
+.header-socials {
+   
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.header-socials-items {
+  display: flex;
+  justify-content: center;
+
+ 
+}
+
 .N {
-    grid-area: NAV;
+  grid-area: NAV;
+  background-color: var(--blue-light);
+ margin-bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 8vh;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;;
+ 
+
+
 }
+
+.nav-list{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style-type: none;
+
+   
+  }
+
+.nav-list-item{
+
+
+    display: flex;
+    justify-content: center;
+    
+   
+}
+
+a{
+    text-decoration:none;
+    color: var(--black);
+}
+ 
+  
+
 .Rela {
-    grid-area: SPON;
+  grid-area: SPON;
 }
 .M {
-    grid-area: MAIN;
+  grid-area: MAIN;
 }
-.Desc{
-    grid-area: DESC;
+.Desc {
+  grid-area: DESC;
 }
 
 .FOR {
-    grid-area: FORM;
+  grid-area: FORM;
 }
 .C {
-    grid-area: CONT;
+  grid-area: CONT;
 }
-.F{
-grid-area: FOOT;
-}
-.Gallery{
-    grid-area: GALL;
+.F {
+  grid-area: FOOT;
+  
+
+  }
+  
+.Gallery {
+  grid-area: GALL;
 }
