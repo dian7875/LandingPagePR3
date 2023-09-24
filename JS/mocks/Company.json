@@ -58,12 +58,12 @@
       },
       {
         "id": "6",
-        "ico": "",
+        "ico": "/Asset/Beirute.png",
         "description": "Beirute"
       },
       {
         "id": "7",
-        "ico":"",
+        "ico":"/Asset/RefriMundo.png",
         "description": "RefriMundo"
       },
       {
