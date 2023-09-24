@@ -1,9 +1,13 @@
 
 {
     "id":1,
-    "img":"https://scontent.fsyq1-1.fna.fbcdn.net/v/t39.30808-6/277462402_108732535127058_646574890192178384_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=a2f6c7&_nc_ohc=YKzfXFlCC9cAX_43P5v&_nc_ht=scontent.fsyq1-1.fna&oh=00_AfDV4olHt0ucbrO1fEUEWYyhzF9v469bb4iz5kCGJpYY_w&oe=6513D6D3"    ,
+    "Logo":"/Asset/RYCLOG.png"    ,
     "companyName":"Climatizadora RyC",
     "description":"Servicio de calefaccion Ventilacion y Aire Acondicionado",
+    "Correo":"climatizadoraryc@gmail.com",
+    "Tel":"+506 8837-3941",
+    "Tel2":"+506 8970-9802",
+    "Dir":"Nicoya, Guanacaste, Costa Rica",
     "services":[
         {
           "id":"1",
