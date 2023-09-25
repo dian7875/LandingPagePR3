@@ -10,9 +10,18 @@ window.addEventListener("load", function (event) {
     const LogoRYC = document.getElementById("logo");
     LogoRYC.src = RYC.Logo;
 
-
     RYC.services.forEach(services => {
-     //Servicios
+    const ServCont = this.document.getElementById("Serv")
+    const IconS = this.document.createElement("img");
+    const ServDesc = this.document.createElement("p")
+    IconS.src = services.ico;
+    ServDesc.textContent = services.description;
+    const ServiceF = this.document.createElement("div");
+    ServiceF.id = services.id;
+    ServiceF.appendChild(IconS);
+    ServiceF.appendChild(ServDesc);
+    ServiceF.className="ServCard";
+    ServCont.appendChild(ServiceF)
     });
     RYC.sponsors.forEach(sponsors =>{
         //Marcas Relacionadas

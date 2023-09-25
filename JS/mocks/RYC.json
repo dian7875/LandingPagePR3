@@ -16,23 +16,23 @@
         },
         {
           "id": "2",
-          "ico":"https://cdn-icons-png.flaticon.com/128/9936/9936621.png",
-          "description": "Mantenimientos"
-        },
-        {
-          "id": "3",
           "ico":"https://cdn-icons-png.flaticon.com/128/11252/11252733.png",
           "description": "Reparacion De equipos"
         },
         {
+          "id": "3",
+          "ico":"https://cdn-icons-png.flaticon.com/128/9936/9936621.png",
+          "description": "Mantenimientos"
+        },
+        {
           "id": "4",
-          "ico":"https://cdn-icons-png.flaticon.com/128/4927/4927896.png",
-          "description": "Recarga De Aire Acondicionado Automotriz"
+          "ico":"https://cdn-icons-png.flaticon.com/128/10048/10048327.png",
+          "description": "Venta de equipos de A/C"
         },
         {
           "id": "5",
-          "ico":"https://cdn-icons-png.flaticon.com/128/10048/10048327.png",
-          "description": "Venta de equipos de A/C"
+          "ico":"https://cdn-icons-png.flaticon.com/128/4927/4927896.png",
+          "description": "Recarga De Aire Acondicionado Automotriz"
         }
 
       ],
