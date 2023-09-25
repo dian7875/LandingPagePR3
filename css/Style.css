@@ -152,6 +152,8 @@ li{
 
 .Gallery {
   grid-area: GALL;
+ 
+  
 }
 .M {
   grid-area: MAIN;
@@ -188,4 +190,32 @@ li{
 }
 .DirL{
   display: flex;
+}
+#Gal{
+  display: flex;
+  width: 1500PX;
+  height: 600PX;
+  padding-left: 10%;
+  gap: 1%;
+  flex-wrap: nowrap;
+  overflow: scroll;
+}
+
+#Gal::-webkit-scrollbar {
+  width: 10px; /* Ancho de las barras de desplazamiento */
+}
+
+#Gal::-webkit-scrollbar-track {
+  background-color: transparent; /* Color de fondo de la pista de desplazamiento */
+}
+
+#Gal::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Color del "pulgar" de la barra de desplazamiento */
+  border: none; /* Borde del "pulgar" */
+}
+
+#Gal img {
+  width: 33.33%; /* Asegúrate de que cada imagen tenga un ancho igual o menor al 33.33% */
+  height: auto; /* Ajusta la altura automáticamente */
+  object-fit: cover; 
 }

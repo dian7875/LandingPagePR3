@@ -22,12 +22,25 @@ window.addEventListener("load", function (event) {
     ServiceF.appendChild(ServDesc);
     ServiceF.className="ServCard";
     ServCont.appendChild(ServiceF)
+        
     });
     RYC.sponsors.forEach(sponsors =>{
         //Marcas Relacionadas
     });
 
+    RYC.carrusel.forEach(carrusel =>{
+        const imagen = document.createElement("img");
+        imagen.src = carrusel.img;
+        const imagenContainer = document.getElementById("Gal");
+        imagenContainer.appendChild(imagen);
+        console.log(imagen.src);
+
+    })
+
                 });
+
+
+    
 
 
 
