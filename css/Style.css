@@ -17,11 +17,11 @@ body {
   grid-template-areas:
     "HEAD HEAD HEAD HEAD"
     "NAV NAV NAV NAV"
-    "- SPON SPON SPON"
-    "- DESC DESC DESC"
-    "- MAIN MAIN MAIN"
-    "- GALL GALL GALL"
-    "- CONT FORM FORM"
+    "SPON SPON SPON SPON"
+    "DESC DESC DESC DESC"
+    "MAIN MAIN MAIN MAIN"
+    "GALL GALL GALL GALL"
+    "CONT CONT FORM FORM"
     "FOOT FOOT FOOT FOOT";
   font-family: 'Montserrat', sans-serif;
 }
@@ -155,5 +155,38 @@ li{
 
 .Gallery {
   grid-area: GALL;
+ 
+  
 }
 
+#Gal{
+  display: flex;
+  width: 1500PX;
+  height: 600PX;
+  padding-left: 10%;
+  gap: 1%;
+  flex-wrap: nowrap;
+  overflow: scroll;
+  scrollbar-width: thin; 
+  scrollbar-color: transparent transparent;
+  
+}
+
+#Gal::-webkit-scrollbar {
+  width: 10px; /* Ancho de las barras de desplazamiento */
+}
+
+#Gal::-webkit-scrollbar-track {
+  background-color: transparent; /* Color de fondo de la pista de desplazamiento */
+}
+
+#Gal::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Color del "pulgar" de la barra de desplazamiento */
+  border: none; /* Borde del "pulgar" */
+}
+
+#Gal img {
+  width: 33.33%; /* Asegúrate de que cada imagen tenga un ancho igual o menor al 33.33% */
+  height: auto; /* Ajusta la altura automáticamente */
+  object-fit: cover; 
+}
