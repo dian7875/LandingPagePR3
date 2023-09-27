@@ -7,7 +7,7 @@ window.addEventListener("load", function (event) {
     this.document.getElementById("Dir").innerText = RYC.Direction;
     this.document.getElementById("Tel").innerText = RYC.Tel;
     this.document.getElementById("Mail").innerText = RYC.Correo;
-    const LogoRYC = document.getElementById("logo");
+    const LogoRYC = document.getElementById("Logo");
     LogoRYC.src = RYC.Logo;
     //Servicios de RYC
     const servContainer = document.getElementById('Serv');

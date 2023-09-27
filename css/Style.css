@@ -24,7 +24,7 @@ body {
     "FOOT FOOT FOOT FOOT";
   font-family: 'Montserrat', sans-serif;
 }
-
+/*Header Style*/
 .H {
   color: var(--white);
   grid-area: HEAD;
@@ -33,6 +33,11 @@ body {
   justify-content: space-around;
   align-items: center;
   height: 5vh;
+  /*Ventana Fija*/
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .header-contacts {
@@ -56,7 +61,7 @@ body {
   display: flex;
   justify-content: center;
 }
-
+/*Nav Barr Style*/
 .N {
   grid-area: NAV;
   background-color: var(--blue-light);
@@ -66,9 +71,27 @@ body {
   align-items: center;
   height: 8vh;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  /*Ventana Fija*/
+  position: fixed;
+  top: 5vh;
+  left: 0; 
+  width: 100%;
 }
-#logo {
-  height: 180%;
+.N-V{
+  visibility:hidden;
+}
+.Nav-list { 
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  list-style-type: none;
+}
+.Nav-a{
+  text-decoration: none;
+  color: var(--black);
+}
+#Logo {
+  height: 220%;
 }
 #FB{
     width: 18%;
@@ -103,28 +126,6 @@ body {
     background-repeat: no-repeat; 
     text-decoration: none;
 }
-.N-V{
-  visibility:hidden;
-}
-.nav-Log{
-width: 8%;
-}
-li{
-  text-decoration: none;
-  color: black;
-}
-.nav-list {
-  
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  list-style-type: none;
-}
-.Nav-a{
-  text-decoration: none;
-  color: var(--black);
-}
-
 
 .Rela {
   grid-area: SPON;
@@ -205,7 +206,7 @@ li{
 }
 #Serv{
  display: flex;
- width: 25%;
+ width: 22%;
  height: 100%;
  flex-wrap: wrap;
  flex-direction: column;
@@ -217,4 +218,13 @@ li{
   justify-content:start;
   align-items: center;
   gap: 2%;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+  transform-origin: center right;
+  transform: scale(1);
+}
+#Serv .ServCard:hover {
+  transform: scale(1.6);
+   /* Cambia el valor para ajustar el nivel de zoom */
 }
