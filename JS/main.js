@@ -3,31 +3,28 @@ window.addEventListener("load", function (event) {
     fetch('./JS/mocks/RYC.json')
     .then(response => response.json())
     .then(RYC => {
-    //Info de RYC
+    //Info General de RYC
     this.document.getElementById("Dir").innerText = RYC.Direction;
     this.document.getElementById("Tel").innerText = RYC.Tel;
     this.document.getElementById("Mail").innerText = RYC.Correo;
     const LogoRYC = document.getElementById("Logo");
     LogoRYC.src = RYC.Logo;
-    //Servicios de RYC
-    const servContainer = document.getElementById('Serv');
-const imagesToLoad = []; // Array para almacenar las imágenes
+ //Servicios de RYC
+const servContainer = document.getElementById('Serv');
+const imagesToLoad = [];
 
-// Itera sobre los servicios y carga las imágenes en el array
 RYC.services.forEach(services => {
   const IconS = document.createElement("img");
   IconS.src = services.ico;
-  imagesToLoad.push(IconS); // Agrega la imagen al array de imágenes a cargar
+  imagesToLoad.push(IconS);
 });
 
-// Función para cargar las descripciones después de cargar todas las imágenes
 function loadDescriptions() {
   RYC.services.forEach((services, index) => {
     const ServDesc = document.createElement("p");
     ServDesc.textContent = services.description;
     const ServiceF = document.createElement("div");
     ServiceF.id = services.id;
-
     // Si el índice es par, muestra primero la descripción y luego la imagen
     if (index % 2 === 0) {
       ServiceF.appendChild(ServDesc);
@@ -37,13 +34,10 @@ function loadDescriptions() {
       ServiceF.appendChild(imagesToLoad[index]);
       ServiceF.appendChild(ServDesc);
     }
-
     ServiceF.className = "ServCard";
     servContainer.appendChild(ServiceF);
   });
 }
-
-// Carga las imágenes y llama a loadDescriptions cuando todas las imágenes estén cargadas
 Promise.all(imagesToLoad.map(img => {
   return new Promise((resolve, reject) => {
     img.onload = resolve;
@@ -51,11 +45,10 @@ Promise.all(imagesToLoad.map(img => {
   });
 }))
   .then(() => {
-    loadDescriptions(); // Cuando todas las imágenes están cargadas, carga las descripciones
+    loadDescriptions();
   })
-  .catch(error => {
-    console.error("Error al cargar las imágenes:", error);
-  });
+
+
 
     RYC.sponsors.forEach(sponsors =>{
         //Marcas Relacionadas
@@ -66,7 +59,6 @@ Promise.all(imagesToLoad.map(img => {
         imagen.src = carrusel.img;
         const imagenContainer = document.getElementById("Gal");
         imagenContainer.appendChild(imagen);
-
     })
 
   });

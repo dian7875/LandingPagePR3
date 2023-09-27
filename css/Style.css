@@ -161,6 +161,7 @@ body {
   display: flex;
 }
 #Gal{
+  padding-top: 12vh;
   display: flex;
   width: 1500PX;
   height: 600PX;
@@ -226,5 +227,4 @@ body {
 }
 #Serv .ServCard:hover {
   transform: scale(1.6);
-   /* Cambia el valor para ajustar el nivel de zoom */
 }
