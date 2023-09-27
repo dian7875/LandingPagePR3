@@ -173,20 +173,28 @@ li{
 }
 
 #Gal::-webkit-scrollbar {
-  width: 10px; /* Ancho de las barras de desplazamiento */
+  width: 10px; 
 }
 
 #Gal::-webkit-scrollbar-track {
-  background-color: transparent; /* Color de fondo de la pista de desplazamiento */
+  background-color: transparent;
 }
 
 #Gal::-webkit-scrollbar-thumb {
-  background-color: transparent; /* Color del "pulgar" de la barra de desplazamiento */
-  border: none; /* Borde del "pulgar" */
+  background-color: transparent; 
+  border: none; 
 }
 
 #Gal img {
-  width: 33.33%; /* Asegúrate de que cada imagen tenga un ancho igual o menor al 33.33% */
-  height: auto; /* Ajusta la altura automáticamente */
+  width: 33.33%; 
+  height: auto; 
   object-fit: cover; 
+}
+
+#Gal img:hover{
+
+  width: 50%; 
+  height: auto;
+  box-shadow: 0 0 30px #77c3cf;
+
 }
