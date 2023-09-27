@@ -170,22 +170,56 @@ li{
 }
 
 #Gal::-webkit-scrollbar {
-  width: 10px; /* Ancho de las barras de desplazamiento */
+  width: 10px; 
 }
 
 #Gal::-webkit-scrollbar-track {
-  background-color: transparent; /* Color de fondo de la pista de desplazamiento */
+  background-color: transparent;
 }
 
 #Gal::-webkit-scrollbar-thumb {
-  background-color: transparent; /* Color del "pulgar" de la barra de desplazamiento */
-  border: none; /* Borde del "pulgar" */
+  background-color: transparent; 
+  border: none; 
 }
 
 #Gal img {
-  width: 33.33%; /* Asegúrate de que cada imagen tenga un ancho igual o menor al 33.33% */
-  height: auto; /* Ajusta la altura automáticamente */
+  width: 33.33%; 
+  height: auto; 
   object-fit: cover; 
+}
+.M {
+  grid-area: MAIN;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+
+}
+#Serv{
+ display: flex;
+ width: 25%;
+ height: 100%;
+ flex-wrap: wrap;
+ flex-direction: column;
+ align-items: center;
+}
+.ServCard{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content:start;
+  align-items: center;
+  gap: 2%;
+}
+
+#Gal img:hover{
+
+  width: 50%; 
+  height: auto;
+  box-shadow: 0 0 30px #77c3cf;
+
 }
 .M {
   grid-area: MAIN;
