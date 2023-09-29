@@ -13,26 +13,26 @@ window.addEventListener("load", function (event) {
 const servContainer = document.getElementById('Serv');
 const imagesToLoad = [];
 
-RYC.services.forEach(services => {
+RYC.servicios.forEach(servicios => {
   const IconS = document.createElement("img");
-  IconS.src = services.ico;
+  IconS.src = servicios.ico;
   imagesToLoad.push(IconS);
 });
 
-function loadDescriptions() {
-  RYC.services.forEach((services, index) => {
-    const ServDesc = document.createElement("p");
-    ServDesc.textContent = services.description;
+function loadName() {
+  RYC.servicios.forEach((servicios, index) => {
+    const ServName = document.createElement("p");
+    ServName.textContent = servicios.Name;
     const ServiceF = document.createElement("div");
-    ServiceF.id = services.id;
+    ServiceF.id = servicios.Servid;
     // Si el índice es par, muestra primero la descripción y luego la imagen
     if (index % 2 === 0) {
-      ServiceF.appendChild(ServDesc);
+      ServiceF.appendChild(ServName);
       ServiceF.appendChild(imagesToLoad[index]);
     } else {
       // Si el índice es impar, muestra primero la imagen y luego la descripción
       ServiceF.appendChild(imagesToLoad[index]);
-      ServiceF.appendChild(ServDesc);
+      ServiceF.appendChild(ServName);
     }
     ServiceF.className = "ServCard";
     servContainer.appendChild(ServiceF);
@@ -45,14 +45,8 @@ Promise.all(imagesToLoad.map(img => {
   });
 }))
   .then(() => {
-    loadDescriptions();
+    loadName();
   })
-
-
-
-    RYC.sponsors.forEach(sponsors =>{
-        //Marcas Relacionadas
-    });
 
     RYC.carrusel.forEach(carrusel =>{
         const imagen = document.createElement("img");
