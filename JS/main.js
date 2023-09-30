@@ -10,45 +10,53 @@ window.addEventListener("load", function (event) {
     const LogoRYC = document.getElementById("Logo");
     LogoRYC.src = RYC.Logo;
  //Servicios de RYC
-const servContainer = document.getElementById('Serv');
-const imagesToLoad = [];
+ const servContainer = document.getElementById("Serv");
+        RYC.servicios.forEach((servicio) => {
+            const ServiceCard = document.createElement("span");
+            ServiceCard.id = servicio.ServId;
+            ServiceCard.className = "ServCard";
 
-RYC.servicios.forEach(servicios => {
-  const IconS = document.createElement("img");
-  IconS.src = servicios.ico;
-  imagesToLoad.push(IconS);
-});
+            const serviceContainer = document.createElement("span");
+            serviceContainer.className = "ServiceContainer";
 
-function loadName() {
-  RYC.servicios.forEach((servicios, index) => {
-    const ServName = document.createElement("p");
-    ServName.textContent = servicios.Name;
-    const ServiceF = document.createElement("div");
-    ServiceF.id = servicios.Servid;
-    // Si el índice es par, muestra primero la descripción y luego la imagen
-    if (index % 2 === 0) {
-      ServiceF.appendChild(ServName);
-      ServiceF.appendChild(imagesToLoad[index]);
-    } else {
-      // Si el índice es impar, muestra primero la imagen y luego la descripción
-      ServiceF.appendChild(imagesToLoad[index]);
-      ServiceF.appendChild(ServName);
-    }
-    ServiceF.className = "ServCard";
-    servContainer.appendChild(ServiceF);
-  });
+       
+            const servicePreview = document.createElement("span");
+            servicePreview.className = "ServicePreview";
+            if (parseInt(servicio.ServId) % 2 === 0) {
+            servicePreview.classList.add("icon-right");
 }
-Promise.all(imagesToLoad.map(img => {
-  return new Promise((resolve, reject) => {
-    img.onload = resolve;
-    img.onerror = reject;
-  });
-}))
-  .then(() => {
-    loadName();
-  })
+            servicePreview.innerHTML = `
+            <img src="${servicio.ico}">
+            <h3>${servicio.Name}</h3>`;
+            
+            const serviceInfo = document.createElement("span");
+            serviceInfo.className = "ServiceInfo";
+            if (parseInt(servicio.ServId) % 2 === 0) {
+              serviceInfo.classList.add("InfoI")
+            }
+            serviceInfo.innerHTML = `
+                <p>${servicio.description}</p> `;
+            
+            //Marcas relacionadas a los servicios
+            const marcasRelacionadas = RYC.Relacionados.filter((relacionado) => relacionado.id === servicio.ServId);
+            if (marcasRelacionadas.length > 0) {
+                const marca = document.createElement("span");
+                marca.className = "marcas";
+                marcasRelacionadas.forEach((relacionado) => {
+                    const marcaImg = document.createElement("img");
+                    marcaImg.src = relacionado.marca;
+                    marca.appendChild(marcaImg);
+                });
+                serviceInfo.appendChild(marca);
+            }
 
-    RYC.carrusel.forEach(carrusel =>{
+            serviceContainer.appendChild(serviceInfo);
+            serviceContainer.appendChild(servicePreview);
+
+            ServiceCard.appendChild(serviceContainer);
+            servContainer.appendChild(ServiceCard);
+        });
+ RYC.carrusel.forEach(carrusel =>{
         const imagen = document.createElement("img");
         imagen.src = carrusel.img;
         const imagenContainer = document.getElementById("Gal");
