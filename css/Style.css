@@ -95,38 +95,27 @@ body {
 #Logo {
   height: 220%;
 }
-#FB{
-    width: 18%;
-    height: 20%;
-    display: inline-block;
-    padding: 2%;
-    background-image: url('https://cdn-icons-png.flaticon.com/512/145/145802.png');
-    background-size:100%; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    text-decoration: none;
-}
-#IG{
+.social-icons {
   width: 18%;
   height: 20%;
   display: inline-block;
   padding: 2%;
-  background-image: url('https://cdn-icons-png.flaticon.com/512/174/174855.png');
-  background-size:100%; 
-  background-position: center; 
-  background-repeat: no-repeat; 
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
   text-decoration: none;
 }
-#W{
-    width: 18%;
-    height: 20%;
-    display: inline-block;
-    padding: 2%;
-    background-image: url('https://cdn-icons-png.flaticon.com/512/174/174879.png');
-    background-size:100%; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    text-decoration: none;
+
+#FB {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/145/145802.png');
+}
+
+#IG {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/174/174855.png');
+}
+
+#W {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/174/174879.png');
 }
 
 .Rela {
@@ -205,37 +194,38 @@ body {
   justify-content: center;
   align-items: center;
   align-self: center;
-  
-}
-#Serv{
- width: 30%;
- height: auto;
 }
 
-.ServiceContainer{
+#Serv {
+  width: 30%;
+  height: auto;
+  
+}
+
+.ServiceContainer {
   position: relative;
   display: inline-block;
   transition: transform 0.3s;
+  padding-top: 2%;
 }
-.ServiceContainer:hover{
-  transform: scale(1.6); 
-}
-.ServiceContainer:hover .ServiceInfo{
-  visibility: visible;
-}
-.ServiceContainer:hover h3{
-  visibility: hidden; 
+.ServiceContainer:hover {
+  transform: scale(1.6);
 }
 
-.ServiceInfo img{
+.ServiceContainer:hover .ServiceInfo {
+  visibility: visible;
+}
+
+.ServiceContainer:hover h3 {
+  visibility: hidden;
+}
+
+.ServiceInfo img {
   height: 30%;
   width: auto;
 }
-.ServiceInfo p{
-  width: 80%;
-  height: auto;
-}
-.ServiceInfo{
+
+.ServiceInfo {
   height: 180px;
   width: 570px;
   position: absolute;
@@ -244,26 +234,30 @@ body {
   align-items: center;
   visibility: hidden;
 }
-.ServiceInfo p{
+
+.ServiceInfo p {
   padding-top: 4%;
   width: 50%;
 }
-.InfoI{
+
+.InfoI {
   align-items: start;
   padding-right: 20%;
 }
-.marcas{
+
+.marcas {
   width: 140px;
   height: 140px;
 }
-.ServicePreview{
+
+.ServicePreview {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 30px;
   position: relative;
-
 }
+
 .icon-right {
   display: flex;
   flex-direction: row-reverse;
