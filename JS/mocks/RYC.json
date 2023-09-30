@@ -1,6 +1,6 @@
 
 {
-    "id":1,
+    "id":"RYC",
     "Logo":"/Asset/RYCLOG.png"    ,
     "companyName":"Climatizadora RyC",
     "description":"Servicio de calefaccion Ventilacion y Aire Acondicionado",
@@ -10,75 +10,76 @@
     "Direction":"Nicoya, Guanacaste, Costa Rica",
     "servicios":[
         {
-          "Servid":"1",
+          "ServId":"1",
           "ico":"https://cdn-icons-png.flaticon.com/128/9936/9936571.png",
-          "Name":"Instalacion De Aire Acondiconado"
+          "Name":"Instalacion De Aire Acondiconado",
+          "description":"Instalacion todo tipo de maquinas como condesadores, mini-splits, y demas con marcas como:"
         },
         {
-          "Servid": "2",
+          "ServId": "2",
           "ico":"https://cdn-icons-png.flaticon.com/128/11252/11252733.png",
-          "Name": "Reparacion De equipos"
+          "Name": "Reparacion De equipos",
+          "description":"Reparacion de todo de equipos de aires acondicionados"
           
         },
         {
-          "Servid": "3",
+          "ServId": "3",
           "ico":"https://cdn-icons-png.flaticon.com/128/9936/9936621.png",
           "Name": "Mantenimientos",
-          "Relacionados":[
-            {
-              "id":"icl",
-              "ico":"https://pic.nximg.cn/file/20160415/13581641_110718184168_2.jpg",
-              "Name":"Icelong"
-            }
-            ]
+          "description":"Brindamos mantenimiento a todas las marcas del mercado con herramientas y refrigerantes de confianza"
         },
         {
-          "Servid": "4",
+          "ServId": "4",
           "ico":"https://cdn-icons-png.flaticon.com/128/10048/10048327.png",
           "Name": "Venta de equipos de A/C",
-          "Relacionados":[
-            { 
-              "id": "B",
-              "ico": "/Asset/Beirute.png",
-              "Name": "Beirute"
-            },
-            {
-              "id": "RF",
-              "ico":"/Asset/RefriMundo.png",
-              "Name": "RefriMundo"
-           }
-          ]
+          "description":"Venta de todo tipo de equipos desde termometros digitales, hasta condesadores y mini-splits"
+          
         },
         {
-          "Servid": "5",
+          "ServId": "5",
           "ico":"https://cdn-icons-png.flaticon.com/128/4927/4927896.png",
           "Name": "Recarga De Aire Acondicionado Automotriz",
-          "Relacionados":[
-            {
-              "id":"icl",
-              "ico":"https://pic.nximg.cn/file/20160415/13581641_110718184168_2.jpg",
-              "Name":"Icelong"
-            }
-            ]
+          "description": "Recarga de A/C vehicular con regfrigerantes de confianza"
         }
 
       ],
       "Relacionados":[
       {
         "id": "1",
-        "ico":"https://www.meu-semiconductor.eu/wp-content/uploads/2022/06/mitsubishi-electric-logo.png",
+        "marca":"https://cdn.icon-icons.com/icons2/1834/PNG/512/iconfindermitsubishilogo4141793-115967_115914.png",
         "Name": "Mitsubishi Electric"
       },
       {
         "id": "1",
-        "ico":"https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Logo_of_the_Carrier_Corporation.svg/1200px-Logo_of_the_Carrier_Corporation.svg.png",
+        "marca":"https://http2.mlstatic.com/D_NP_831880-MLA47411605785_092021-T.webp",
         "Name": "Carrier"
       },
       {
         "id": "1",
-        "ico":"https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/LG_logo_%282015%29.svg/2560px-LG_logo_%282015%29.svg.png",
+        "marca":"https://cdn-icons-png.flaticon.com/128/882/882722.png",
         "Name": "LG"
-      }
+      },
+      {
+        "id":"5",
+        "marca":"https://pic.nximg.cn/file/20160415/13581641_110718184168_2.jpg",
+        "Name":"Icelong"
+      },
+      {
+        "id":"2",
+        "marca":"https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://totalherramientas.com.ar/wp-content/uploads/2019/08/logo-total-variante4.png",
+        "Name":"Icelong"
+      },
+      
+      { 
+        "id": "4",
+        "marca": "/Asset/Beirute.png",
+        "Name": "Beirute"
+      },
+      {
+        "id": "4",
+        "marca":"/Asset/RefriMundo.png",
+        "Name": "RefriMundo"
+     }
       ],
       "carrusel": [
         {

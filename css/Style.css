@@ -205,29 +205,97 @@ body {
   justify-content: center;
   align-items: center;
   align-self: center;
-
+  
 }
 #Serv{
-  padding-top: 12vh;
- display: flex;
- width: 22%;
- height: 100%;
- flex-wrap: wrap;
- flex-direction: column;
- align-items: center;
+ width: 30%;
+ height: auto;
 }
-.ServCard{
+
+.ServiceContainer{
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s;
+}
+.ServiceContainer:hover{
+  transform: scale(1.6); /* Aplica un zoom del 10% al hacer hover */
+}
+.ServiceContainer:hover .ServiceInfo{
+  visibility: visible;
+}
+.ServiceContainer:hover h3{
+  visibility: hidden; /* Aplica un zoom del 10% al hacer hover */
+}
+
+.ServiceInfo img{
+  height: 30%;
+  width: auto;
+}
+.ServiceInfo p{
+  width: 80%;
+  height: auto;
+}
+.ServiceInfo{
+  height: 180px;
+  width: 570px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  visibility: hidden;
+}
+.ServiceInfo p{
+  padding-top: 4%;
+  width: 50%;
+}
+.InfoI{
+  align-items: start;
+  padding-right: 20%;
+}
+.marcas{
+  width: 140px;
+  height: 140px;
+}
+.ServicePreview{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  position: relative;
+
+}
+.icon-right {
   display: flex;
   flex-direction: row-reverse;
-  justify-content:start;
-  align-items: center;
-  gap: 2%;
-  width: 100%;
-  height: auto;
-  transition: transform 0.3s ease;
-  transform-origin: center right;
-  transform: scale(1);
 }
+
+/*
 #Serv .ServCard:hover {
   transform: scale(1.6);
+}/*
+.ServiceData{
+  display: flex;
+  gap: 2%;
+  width: 80%;
+  height: 100%;
 }
+.Icons img{
+  width: 100%;
+  height: auto;
+}
+.InforServicio{
+  width: 25%;
+  height: auto;
+}
+
+/*
+.ServiceData{
+  visibility: hidden;
+  position: absolute;
+}
+.ServCard:hover .ServiceData{
+  visibility: visible;
+}
+.ServCard:hover p{
+  visibility: hidden;
+}*/
