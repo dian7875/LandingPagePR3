@@ -218,13 +218,13 @@ body {
   transition: transform 0.3s;
 }
 .ServiceContainer:hover{
-  transform: scale(1.6); /* Aplica un zoom del 10% al hacer hover */
+  transform: scale(1.6); 
 }
 .ServiceContainer:hover .ServiceInfo{
   visibility: visible;
 }
 .ServiceContainer:hover h3{
-  visibility: hidden; /* Aplica un zoom del 10% al hacer hover */
+  visibility: hidden; 
 }
 
 .ServiceInfo img{
@@ -268,34 +268,3 @@ body {
   display: flex;
   flex-direction: row-reverse;
 }
-
-/*
-#Serv .ServCard:hover {
-  transform: scale(1.6);
-}/*
-.ServiceData{
-  display: flex;
-  gap: 2%;
-  width: 80%;
-  height: 100%;
-}
-.Icons img{
-  width: 100%;
-  height: auto;
-}
-.InforServicio{
-  width: 25%;
-  height: auto;
-}
-
-/*
-.ServiceData{
-  visibility: hidden;
-  position: absolute;
-}
-.ServCard:hover .ServiceData{
-  visibility: visible;
-}
-.ServCard:hover p{
-  visibility: hidden;
-}*/
