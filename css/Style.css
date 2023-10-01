@@ -128,9 +128,7 @@ body {
   grid-area: DESC;
 }
 
-.FOR {
-  grid-area: FORM;
-}
+
 
 .C {
   grid-area: CONT;
@@ -138,25 +136,26 @@ body {
 
 .F {
   grid-area: FOOT;
+  width: 100%;
 
-
-}
-
-.Gallery {
-  grid-area: GALL;
- 
-  
 }
 
 .DirL{
   display: flex;
 }
-#Gal{
-  padding-top: 12vh;
+.Gallery {
   display: flex;
-  width: 1500PX;
-  height: 600PX;
-  padding-left: 10%;
+  flex-direction: column;
+  align-items: center;
+  grid-area: GALL;
+  padding-top: 15vh;
+  padding-bottom: 2%;
+  gap: 20px;
+}
+#Gal{
+  display: flex;
+  width: 80%;
+  height: 600px;
   gap: 1%;
   flex-wrap: nowrap;
   overflow: scroll;
@@ -195,13 +194,10 @@ body {
   align-items: center;
   align-self: center;
 }
-
 #Serv {
   width: 30%;
   height: auto;
-  
 }
-
 .ServiceContainer {
   position: relative;
   display: inline-block;
@@ -262,3 +258,51 @@ body {
   display: flex;
   flex-direction: row-reverse;
 }
+.Help {
+  width: 70%;
+  height: auto;
+  grid-area: FORM;
+  margin-top: 10%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  box-shadow: 10px 10px 80px var(--blue);
+}
+.InfoBox{
+  padding-top: 2%;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  gap: 20px;
+  align-items: center;
+}
+.DataCliente input{
+  width: 600px;
+  height: 40px;
+}
+#Mensaje{
+  width: 600px;
+  height: 100px;
+}
+.DataCliente input::placeholder{
+font-size: medium;
+}
+.DataCliente{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+  .formBtn{
+    background: var(--blue);
+    border: 0;
+    width: 30%;
+    height: 30px;
+    color: #ffffff;
+    font-size: 1.2em;
+    border-radius: 20px;
+    cursor: pointer;
+  }
