@@ -13,26 +13,26 @@
           "ServId":"1",
           "ico":"https://cdn-icons-png.flaticon.com/128/9936/9936571.png",
           "Name":"Instalacion De Aire Acondiconado",
-          "description":"Instalacion todo tipo de maquinas como condesadores, mini-splits, y demas con marcas como:"
+          "description":"Instalacion todo tipo de maquinas como condesadores, mini-splits, y demas"
         },
         {
           "ServId": "2",
           "ico":"https://cdn-icons-png.flaticon.com/128/11252/11252733.png",
           "Name": "Reparacion De equipos",
-          "description":"Reparacion de todo de equipos de aires acondicionados"
+          "description":"Reparacion de todo tipo de equipos de aires acondicionado"
           
         },
         {
           "ServId": "3",
           "ico":"https://cdn-icons-png.flaticon.com/128/9936/9936621.png",
           "Name": "Mantenimientos",
-          "description":"Brindamos mantenimiento a todas las marcas del mercado con herramientas y refrigerantes de confianza"
+          "description":"Brindamos mantenimiento a todos los equipos de aire acondicionado a todas las marcas del mercado con herramientas de calidad"
         },
         {
           "ServId": "4",
           "ico":"https://cdn-icons-png.flaticon.com/128/10048/10048327.png",
           "Name": "Venta de equipos de A/C",
-          "description":"Venta de todo tipo de equipos desde termometros digitales, hasta condesadores y mini-splits"
+          "description":"Venta de todo tipo de equipos desde termometros digitales, hasta condesadores y mini-splits de la mano de"
           
         },
         {
@@ -67,7 +67,7 @@
       {
         "id":"2",
         "marca":"https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://totalherramientas.com.ar/wp-content/uploads/2019/08/logo-total-variante4.png",
-        "Name":"Icelong"
+        "Name":"Total"
       },
       
       { 
