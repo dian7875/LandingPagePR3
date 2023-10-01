@@ -269,36 +269,44 @@ body {
   padding-bottom: 2%;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 20px;
   align-items: center;
   box-shadow: 10px 10px 80px var(--blue);
 }
-.InfoBox{
-  padding-top: 2%;
+
+.FormCont{
+  width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
-  width: 80%;
-  gap: 20px;
   align-items: center;
 }
-.DataCliente input{
-  width: 600px;
-  height: 40px;
-}
-#Mensaje{
-  width: 600px;
-  height: 100px;
+.InfoBox{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+  align-items: center;
 }
 .DataCliente input::placeholder{
 font-size: medium;
+font-family: 'Montserrat', sans-serif;
 }
 .DataCliente{
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
 }
-  .formBtn{
+.DataCliente input{
+  width: 100%;
+  height: 40px;
+}
+#Mensaje{
+  height: 80px;
+}
+.formBtn{
     background: var(--blue);
     border: 0;
     width: 30%;
@@ -307,4 +315,4 @@ font-size: medium;
     font-size: 1.2em;
     border-radius: 20px;
     cursor: pointer;
-  }
+}
