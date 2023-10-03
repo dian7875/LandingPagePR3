@@ -16,6 +16,7 @@ body {
   grid-template-areas:
     "HEAD HEAD HEAD HEAD"
     "NAV NAV NAV NAV"
+    "SPON SPON SPON SPON"
     "DESC DESC DESC DESC"
     "GALL GALL GALL GALL"
     "MAIN MAIN MAIN MAIN"
@@ -117,13 +118,31 @@ body {
   background-image: url('https://cdn-icons-png.flaticon.com/512/174/174879.png');
 }
 
-/*Descripcion de la empresa*/
+.Rela {
+  grid-area: SPON;
+}
+
+
+
 .Desc {
   grid-area: DESC;
 }
 
 
-/*Galeria de proyectos y demas*/
+
+.C {
+  grid-area: CONT;
+}
+
+.F {
+  grid-area: FOOT;
+  width: 100%;
+
+}
+
+.DirL{
+  display: flex;
+}
 .Gallery {
   display: flex;
   flex-direction: column;
@@ -165,8 +184,6 @@ body {
   height: auto;
   box-shadow: 0 0 30px #77c3cf;
 }
-
-/*Servicios*/
 #Services {
   grid-area: MAIN;
   padding-top: 2%;
@@ -243,8 +260,6 @@ body {
   display: flex;
   flex-direction: row-reverse;
 }
-
-/*Formulario de ayuda*/
 .Help {
   width: 70%;
   height: auto;
@@ -256,7 +271,7 @@ body {
   flex-direction: column;
   gap: 20px;
   align-items: center;
-  box-shadow: 0 0 20px var(--blue);
+  box-shadow: 10px 10px 80px var(--blue);
 }
 
 .FormCont{
@@ -300,28 +315,4 @@ font-family: 'Montserrat', sans-serif;
     font-size: 1.2em;
     border-radius: 20px;
     cursor: pointer;
-}
-
-/*Contactos*/
-.C {
-  grid-area: CONT;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#Contac{
-width: 50%;
-display: flex;
-flex-direction: column;
-}
-.Icon{
-  width: 5%;
-}
-
-
-/*Footer*/
-.F {
-  grid-area: FOOT;
-  width: 100%;
 }
