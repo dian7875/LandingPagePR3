@@ -54,18 +54,36 @@ body {
   display: flex;
   justify-content: center;
   gap: 20px;
+  width: 10%;
+  height: 80%;
+}
+.social-icons {
+  width: 15%;
+  height: 70%;
+  display: inline-block;
+  padding: 2%;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-decoration: none;
 }
 
-.header-socials-items {
-  width: 20%;
-  display: flex;
-  justify-content: center;
+#FB {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/145/145802.png');
 }
+
+#IG {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/174/174855.png');
+}
+
+#W {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/174/174879.png');
+}
+
 /*Nav Barr Style*/
 .N {
   grid-area: NAV;
   background-color: var(--blue-light);
-  margin-bottom: 10px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -91,30 +109,11 @@ body {
   text-decoration: none;
   color: var(--black);
 }
+.Nav-list a{
+  font-size: large;
+}
 #Logo {
-  height: 220%;
-}
-.social-icons {
-  width: 18%;
-  height: 20%;
-  display: inline-block;
-  padding: 2%;
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  text-decoration: none;
-}
-
-#FB {
-  background-image: url('https://cdn-icons-png.flaticon.com/512/145/145802.png');
-}
-
-#IG {
-  background-image: url('https://cdn-icons-png.flaticon.com/512/174/174855.png');
-}
-
-#W {
-  background-image: url('https://cdn-icons-png.flaticon.com/512/174/174879.png');
+  height: 200%;
 }
 
 /*Descripcion de la empresa*/
@@ -329,6 +328,9 @@ flex-direction: column;
   color: white;
   margin-top: 4vh;
   
+}
+.F h2{
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .w-row{
   display: flex;

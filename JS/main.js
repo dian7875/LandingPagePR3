@@ -86,7 +86,7 @@ window.addEventListener("load", function (event) {
       //Footer
       this.document.getElementById("firstColum").innerHTML = `
       <img class"FIcon" src="${RYC.Logo}"/>
-      <h3 class="FName">${RYC.companyName}</h3>
+      <h2 class="FName">${RYC.companyName}</h2>
       <p class="Fdescription">
 
       ${RYC.description}.</p>
