@@ -80,10 +80,19 @@ window.addEventListener("load", function (event) {
         imagen.src = carrusel.img;
         const imagenContainer = document.getElementById("Gal");
         imagenContainer.appendChild(imagen);
-      })
+      });//Fin de imagenes de proyectos
 
+      //Footer
+      this.document.getElementById("firstColum").innerHTML = `
+      <img class"FIcon" src="${RYC.Logo}"/>
+      <h3 class="FName">${RYC.companyName}</h3>
+        <p class="Fdescription">
+        ${RYC.description}.</P>
+        <br/>
+      `
+      
     });
-    //Fin de imagenes de proyectos
+    
 
 });
 
