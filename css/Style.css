@@ -109,8 +109,12 @@ body {
   text-decoration: none;
   color: var(--black);
 }
+
 .Nav-list a{
   font-size: large;
+}
+.Nav-list a:hover{
+  text-shadow: 0 0 10px rgb(3, 34, 47);
 }
 #Logo {
   height: 200%;
@@ -133,12 +137,13 @@ body {
   margin-bottom: auto; 
   gap: 4%;
   box-shadow: 0 0 10px rgb(221, 221, 221);
-  
+  border-radius: 2%;
 }
 
 #ImgDes{
   margin-left: 1%;
 width: 45%;
+border-radius: 2% 5%;
 }
 
 #txtDes{
@@ -147,6 +152,7 @@ font-size:xx-large;
 
 /*Galeria de proyectos y demas*/
 .Gallery {
+ 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -213,6 +219,7 @@ font-size:xx-large;
 }
 .ServiceContainer:hover {
   transform: scale(1.6);
+  text-shadow: 0 0 5px #77c3cf;
 }
 
 .ServiceContainer:hover .ServiceInfo {
@@ -405,6 +412,9 @@ gap: 3%;
 #ThirColum a{
   text-decoration: none;
   color: white;
+}
+#ThirColum a:hover{
+  color: aqua;
 }
 #FourColum{
  display: flex;
