@@ -642,15 +642,97 @@ flex-direction: column;
 .F {
   grid-area: FOOT;
   width: 100%;
+  height: 100%;
   background-color: #000;
   color: white;
-  margin-top: 12vh;
+  margin-top: 4vh;
   
 }
 .w-row{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  height: 100%;
+  gap: 20px;
 }
-.F img{
-width: 10%;
+#firstColum{
+  padding-top: 2%;
+  display: grid;
+  grid-template-areas: 
+  "Logo Text"
+  "Logo D";
+  width: 25%;
+  height: 60%;
+  align-items: center;
+  justify-content: center;
+}
+#firstColum h3{
+  font-size:x-large;
+  grid-area: Text;
+}
+#firstColum img{
+  grid-area: Logo;
+  width: 100%;
+}
+#firstColum p{
+  font-size: large;
+grid-area: D;
+}
+
+
+#SecondColum{
+display: flex;
+justify-content: center;
+width: 25%;
+height: auto;
+flex-direction: column;
+gap: 3%;
+}
+#ThirColum{
+  display: flex;
+  justify-content: center;
+  width: 25%;
+  height: auto;
+  flex-direction: column;
+  gap: 3%;
+}
+#ThirColum a{
+  text-decoration: none;
+  color: white;
+}
+#FourColum{
+  display: flex;
+  justify-content: center;
+background-color: aqua;
+width: 25%;
+}
+#FourColum img{
+  width: 8%;
+
+}
+
+#copyright{
+  background-color: black;
+  color: white;
+ ;
+}
+#copyright h6{
+ margin-left: 100px;
+}
+.FOT{
+  width: 5%;
+  height: 20%;
+  padding: 2%;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-decoration: none;
+}
+.FIG{
+background-image: url("https://uploads-ssl.webflow.com/5966ea9a9217ca534caf139f/5c8dbfe70fcf5a0514c5b1da_Instagram%20Icon.svg");
+}
+.FFB{
+  background-image: url("https://uploads-ssl.webflow.com/5966ea9a9217ca534caf139f/5c8dbe42e1e6034fdaba46f6_Facebook%20Icon.svg");
+}
+.FWH{
+  background-image: url("");
 }

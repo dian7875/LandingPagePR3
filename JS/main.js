@@ -71,6 +71,7 @@ window.addEventListener("load", function (event) {
 
         ServiceCard.appendChild(serviceContainer);
         servContainer.appendChild(ServiceCard);
+
       });
     
 //Fin de los servicios
@@ -86,11 +87,22 @@ window.addEventListener("load", function (event) {
       this.document.getElementById("firstColum").innerHTML = `
       <img class"FIcon" src="${RYC.Logo}"/>
       <h3 class="FName">${RYC.companyName}</h3>
-        <p class="Fdescription">
-        ${RYC.description}.</P>
-        <br/>
+      <p class="Fdescription">
+
+      ${RYC.description}.</p>
       `
-      
+      RYC.servicios.forEach((servicio) => {
+        const target = this.document.getElementById("SecondColum");
+        const fService = this.document.createElement("h4");
+        fService.textContent = servicio.Name;
+        target.appendChild(fService);
+
+
+
+      }
+      )
+
+
     });
     
 
