@@ -19,7 +19,7 @@ body {
     "DESC DESC DESC DESC"
     "GALL GALL GALL GALL"
     "MAIN MAIN MAIN MAIN"
-    "CONT CONT FORM FORM"
+    "CONT FORM FORM FORM"
     "FOOT FOOT FOOT FOOT";
   font-family: 'Montserrat', sans-serif;
 }
@@ -117,10 +117,33 @@ body {
 }
 
 /*Descripcion de la empresa*/
-.Desc {
+.Description{
+  
   grid-area: DESC;
+  display: flex;
+   
+  justify-content: center; 
+  align-items: center; 
+  background-color: rgb(250, 250, 250);
+  height: 70vh; 
+  width: 150vh;
+  margin-top: 18%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto; 
+  gap: 4%;
+  box-shadow: 0 0 10px rgb(221, 221, 221);
+  
 }
 
+#ImgDes{
+  margin-left: 1%;
+width: 45%;
+}
+
+#txtDes{
+font-size:xx-large;
+}
 
 /*Galeria de proyectos y demas*/
 .Gallery {
@@ -318,7 +341,6 @@ flex-direction: column;
   width: 5%;
 }
 
-
 /*Footer*/
 .F {
   grid-area: FOOT;
@@ -361,7 +383,6 @@ font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: large;
 grid-area: D;
 }
-
 
 #SecondColum{
   padding-left: 5%;
@@ -430,31 +451,5 @@ background-image: url("https://uploads-ssl.webflow.com/5966ea9a9217ca534caf139f/
   height: 25%;
   display: flex;
 
-}
-
-.Description{
-  
-    grid-area: DESC;
-    display: flex;
-     
-    justify-content: center; 
-    align-items: center; 
-    background-color: rgb(250, 250, 250);
-    height: 100vh; 
-    width: 150vh;
-    margin: auto; 
-    gap: 4%;
-    box-shadow: 0 0 10px rgb(221, 221, 221);
-    
-}
-
-#ImgDes{
-  width: 50%;
-  height: auto;
-  
-}
-
-#txtDes{
-  font-size: 130%;
 }
 
