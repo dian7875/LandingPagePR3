@@ -1,0 +1,148 @@
+
+{
+    "id":"RYC",
+    "Logo":"/Asset/RYCLOG.png"    ,
+    "companyName":"Climatizadora RyC",
+    "description":"Servicio de calefaccion Ventilacion y Aire Acondicionado",
+    "imgDescription":"https://scontent.fsyq6-1.fna.fbcdn.net/v/t39.30808-6/315652225_148646764580130_980323855317743523_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=49d041&_nc_ohc=z6XPUSolJTMAX8FjYX_&_nc_ht=scontent.fsyq6-1.fna&oh=00_AfD0rY8UGYbR8f6gs15OaOYSGg4fbjbKl724nJkSsYmG0Q&oe=65210000",
+    "Correo":"climatizadoraryc@gmail.com",
+    "Tel":"+506 8837-3941",
+    "Tel2":"+506 8970-9802",
+    "Direction":"Nicoya, Guanacaste, Costa Rica",
+    "servicios":[
+        {
+          "ServId":"1",
+          "ico":"https://cdn-icons-png.flaticon.com/128/9936/9936571.png",
+          "Name":"Instalacion De Aire Acondiconado",
+          "description":"Instalacion todo tipo de maquinas como condesadores, mini-splits, y demas"
+        },
+        {
+          "ServId": "2",
+          "ico":"https://cdn-icons-png.flaticon.com/128/11252/11252733.png",
+          "Name": "Reparacion De equipos",
+          "description":"Reparacion de todo tipo de equipos de aires acondicionado"
+          
+        },
+        {
+          "ServId": "3",
+          "ico":"https://cdn-icons-png.flaticon.com/128/9936/9936621.png",
+          "Name": "Mantenimientos",
+          "description":"Brindamos mantenimiento a todos los equipos de aire acondicionado a todas las marcas del mercado con herramientas de calidad"
+        },
+        {
+          "ServId": "4",
+          "ico":"https://cdn-icons-png.flaticon.com/128/10048/10048327.png",
+          "Name": "Venta de equipos de A/C",
+          "description":"Venta de todo tipo de equipos desde termometros digitales, hasta condesadores y mini-splits de la mano de:"
+          
+        },
+        {
+          "ServId": "5",
+          "ico":"https://cdn-icons-png.flaticon.com/128/4927/4927896.png",
+          "Name": "Recarga De Aire Acondicionado Automotriz",
+          "description": "Recarga de A/C vehicular con regfrigerantes de confianza"
+        }
+
+      ],
+      "Relacionados":[
+      {
+        "id": "1",
+        "marca":"https://cdn.icon-icons.com/icons2/1834/PNG/512/iconfindermitsubishilogo4141793-115967_115914.png",
+        "Name": "Mitsubishi Electric"
+      },
+      {
+        "id": "1",
+        "marca":"https://http2.mlstatic.com/D_NP_831880-MLA47411605785_092021-T.webp",
+        "Name": "Carrier"
+      },
+      {
+        "id": "1",
+        "marca":"https://cdn-icons-png.flaticon.com/128/882/882722.png",
+        "Name": "LG"
+      },
+      {
+        "id":"5",
+        "marca":"https://pic.nximg.cn/file/20160415/13581641_110718184168_2.jpg",
+        "Name":"Icelong"
+      },
+      {
+        "id":"2",
+        "marca":"https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://totalherramientas.com.ar/wp-content/uploads/2019/08/logo-total-variante4.png",
+        "Name":"Total"
+      },
+      
+      { 
+        "id": "4",
+        "marca": "/Asset/Beirute.png",
+        "Name": "Beirute"
+      },
+      {
+        "id": "4",
+        "marca":"/Asset/RefriMundo.png",
+        "Name": "RefriMundo"
+     }
+      ],
+      "carrusel": [
+        {
+          "id": "1",
+          "img": "https://scontent.fsyq3-1.fna.fbcdn.net/v/t39.30808-6/316541305_152270017551138_7315625740093471814_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=49d041&_nc_ohc=Jc30xlDjYRoAX_sJoPW&_nc_ht=scontent.fsyq3-1.fna&oh=00_AfDGVw7OQ6SMwHD0TzpB9WmYNGNL3uB_Pn6zMdn0V_XYKA&oe=65159951"
+
+        },
+        {
+          "id": "2",
+          "img": "https://scontent.fsyq3-1.fna.fbcdn.net/v/t39.30808-6/279052841_117224054277906_8789962501381876510_n.png?_nc_cat=100&ccb=1-7&_nc_sid=49d041&_nc_ohc=0tLLU-BxQHsAX8sojBd&_nc_ht=scontent.fsyq3-1.fna&oh=00_AfBotm0pxbsyzhyu8o3JiAWlTwnlfEin2WWndw2-haVqEw&oe=6515541E"
+
+        },
+        {
+          "id": "3",
+          "img": "https://scontent.fsyq3-1.fna.fbcdn.net/v/t39.30808-6/278983072_116658087667836_1270271659921936745_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=49d041&_nc_ohc=aigIKHFpv44AX_HtFTY&_nc_ht=scontent.fsyq3-1.fna&oh=00_AfC4VlqRQBKpRgHHZpc3phUcwjYaNaGKbd_w8eJaKnVRXw&oe=651570CF"
+
+        },
+        {
+          "id": "4",
+          "img": "https://scontent.fsyq3-1.fna.fbcdn.net/v/t39.30808-6/279422533_118688110798167_3623464002203032317_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=49d041&_nc_ohc=vfjRvuwi_AoAX_0akep&_nc_ht=scontent.fsyq3-1.fna&oh=00_AfDoX_zxr4wnC3iWA5uWtLDYs1ud68dDhYfOlvFVLBcUew&oe=6516C021"
+
+        },
+        {
+          "id": "5",
+          "img": "https://scontent.fsyq3-1.fna.fbcdn.net/v/t39.30808-6/279300046_118688054131506_1594366086243631436_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=49d041&_nc_ohc=RiM0gqYDieQAX-DlxkA&_nc_ht=scontent.fsyq3-1.fna&oh=00_AfAlyzXaaULOa0yomElpgrLd3nXBTIfTkispyYjmTtAS7Q&oe=651673E8"
+
+        },
+        {
+          "id": "6",
+          "img": "https://scontent.fsyq3-1.fna.fbcdn.net/v/t39.30808-6/280236996_121307563869555_7352877123199327152_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=49d041&_nc_ohc=hamisS-fgLUAX80hP4o&_nc_ht=scontent.fsyq3-1.fna&oh=00_AfAWkNe9X1DCmFWnLBCFPgzatOuQlpMkd1qAFqkXx_VdfA&oe=65168805"
+
+        },
+        {
+          "id": "7",
+          "img": "https://scontent.fsyq3-1.fna.fbcdn.net/v/t39.30808-6/282547803_124121736921471_3862221051880492095_n.png?_nc_cat=101&ccb=1-7&_nc_sid=49d041&_nc_ohc=nby1_2e-zqMAX-a2YWy&_nc_ht=scontent.fsyq3-1.fna&oh=00_AfBVL6vs3N_Smvrf3ZduLLGUk9lsVk7RMo3dipJk3fFLoQ&oe=6515AE53"
+
+        },
+        {
+          "id": "8",
+          "img": "https://scontent.fsyq3-1.fna.fbcdn.net/v/t39.30808-6/285626295_128461536487491_7039487088350676917_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=49d041&_nc_ohc=bODFSTz4CjkAX-k9eRM&_nc_ht=scontent.fsyq3-1.fna&oh=00_AfBn7mTaG3JR1bp2jXY0puIuyOjf0JYoEj3jr5ulQ35Hag&oe=6516D78C"
+
+        },
+        {
+          "id": "9",
+          "img": "https://scontent.fsyq3-1.fna.fbcdn.net/v/t39.30808-6/288217849_131398659527112_3313026420912422629_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=49d041&_nc_ohc=8dqPxGZHb08AX_dT1d1&_nc_ht=scontent.fsyq3-1.fna&oh=00_AfBu0wx5_sJa5eQPF6kha5bdbcW4EHXCjpLi2zus4IsU_Q&oe=65168F70"
+
+        },
+        {
+          "id": "10",
+          "img": "https://scontent.fsyq3-1.fna.fbcdn.net/v/t39.30808-6/289763806_132963492703962_5520855143391264376_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=49d041&_nc_ohc=aK54po9LfKAAX_8UjzR&_nc_ht=scontent.fsyq3-1.fna&oh=00_AfAgT1PnB5rRjEevLeC-p6F90576r5daLn4bR3oXru6-8g&oe=6516150D"
+
+        },
+        {
+          "id": "11",
+          "img": "https://scontent.fsyq3-1.fna.fbcdn.net/v/t39.30808-6/306857432_131579589620181_491588103681534571_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=49d041&_nc_ohc=cFKjHsu2TJ4AX8GQ14M&_nc_ht=scontent.fsyq3-1.fna&oh=00_AfD6UbfJgYyWIctErhK2s2rYc_arZ7iXzy2btMCGf88ixQ&oe=65157C3E"
+
+        },
+        {
+          "id": "12",
+          "img": "https://scontent.fsyq3-1.fna.fbcdn.net/v/t39.30808-6/312802711_142806691830804_1376012928466960164_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=49d041&_nc_ohc=bDzKukcDKNcAX9DFhQB&_nc_ht=scontent.fsyq3-1.fna&oh=00_AfD18XRgU6U2Y_xToB74bvNBoJ5sskDY_PquDTLlU9a8Ow&oe=65162485"
+
+        }
+      ]
+    
+}

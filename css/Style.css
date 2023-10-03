@@ -3,31 +3,44 @@
   --blue-light: #c4e1e7;
   --white: #ffff;
   --blue: #77c3cf;
+
 }
+
 * {
   margin: 0;
   padding: 0;
 }
+
 body {
   display: grid;
   grid-template-areas:
     "HEAD HEAD HEAD HEAD"
     "NAV NAV NAV NAV"
-    "- SPON SPON SPON"
-    "- DESC DESC DESC"
-    "- MAIN MAIN MAIN"
-    "- GALL GALL GALL"
-    "- CONT FORM FORM"
+    "SPON SPON SPON SPON"
+    "DESC DESC DESC DESC"
+    "GALL GALL GALL GALL"
+    "MAIN MAIN MAIN MAIN"
+    "CONT CONT FORM FORM"
     "FOOT FOOT FOOT FOOT";
+
   font-family: "Montserrat", sans-serif;
+
 }
+/*Header Style*/
 .H {
+  color: var(--white);
   grid-area: HEAD;
   background-color: var(--black);
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 5vh;
+  /*Ventana Fija*/
+  position: fixed; 
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .header-contacts {
@@ -35,23 +48,28 @@ body {
 
   gap: 50px;
 }
+
 .header-contacts-items {
   display: flex;
   justify-content: center;
+
 }
 span {
   color: var(--white);
+
 }
 .header-socials {
   display: flex;
   justify-content: center;
   gap: 20px;
 }
+
 .header-socials-items {
+  width: 20%;
   display: flex;
   justify-content: center;
 }
-
+/*Nav Barr Style*/
 .N {
   grid-area: NAV;
   background-color: var(--blue-light);
@@ -60,6 +78,7 @@ span {
   justify-content: space-around;
   align-items: center;
   height: 8vh;
+
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
@@ -79,24 +98,218 @@ span {
 a {
   text-decoration: none;
   color: var(--black);
+
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  /*Ventana Fija*/
+  position: fixed;
+  z-index: 9999;
+  top: 5vh;
+  left: 0; 
+  width: 100%;
+}
+.N-V{
+  visibility:hidden;
+}
+.Nav-list { 
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  list-style-type: none;
+}
+.Nav-a{
+  text-decoration: none;
+  color: var(--black);
+}
+#Logo {
+  height: 220%;
+}
+.social-icons {
+  width: 18%;
+  height: 20%;
+  display: inline-block;
+  padding: 2%;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-decoration: none;
+}
+
+#FB {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/145/145802.png');
+}
+
+#IG {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/174/174855.png');
+}
+
+#W {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/174/174879.png');
 }
 
 .Rela {
   grid-area: SPON;
 }
-.M {
-  grid-area: MAIN;
-}
+
+
+
 .Desc {
   grid-area: DESC;
 }
 
-.FOR {
-  grid-area: FORM;
-}
+
+
 .C {
   grid-area: CONT;
 }
+
+.F {
+  grid-area: FOOT;
+  width: 100%;
+
+}
+
+.DirL{
+  display: flex;
+}
+.Gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: GALL;
+  padding-top: 15vh;
+  padding-bottom: 2%;
+  gap: 20px;
+}
+#Gal{
+  display: flex;
+  width: 80%;
+  height: 600px;
+  gap: 1%;
+  flex-wrap: nowrap;
+  overflow: scroll;
+}
+
+#Gal::-webkit-scrollbar {
+  width: 10px; 
+}
+
+#Gal::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+#Gal::-webkit-scrollbar-thumb {
+  background-color: transparent; 
+  border: none; 
+}
+
+#Gal img {
+  width: 33.33%; 
+  height: auto; 
+  object-fit: cover; 
+}
+#Gal img:hover{
+  width: 50%; 
+  height: auto;
+  box-shadow: 0 0 30px #77c3cf;
+}
+#Services {
+  grid-area: MAIN;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+#Serv {
+  width: 30%;
+  height: auto;
+}
+.ServiceContainer {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s;
+  padding-top: 2%;
+}
+.ServiceContainer:hover {
+  transform: scale(1.6);
+}
+
+.ServiceContainer:hover .ServiceInfo {
+  visibility: visible;
+}
+
+.ServiceContainer:hover h3 {
+  visibility: hidden;
+}
+
+.ServiceInfo img {
+  height: 30%;
+  width: auto;
+}
+
+.ServiceInfo {
+  height: 180px;
+  width: 570px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  visibility: hidden;
+}
+
+.ServiceInfo p {
+  padding-top: 4%;
+  width: 50%;
+}
+
+.InfoI {
+  align-items: start;
+  padding-right: 20%;
+}
+
+.marcas {
+  width: 140px;
+  height: 140px;
+}
+
+.ServicePreview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  position: relative;
+}
+
+.icon-right {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.Help {
+  width: 70%;
+  height: auto;
+  grid-area: FORM;
+  margin-top: 10%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  box-shadow: 10px 10px 80px var(--blue);
+}
+
+.FormCont{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .F {
   grid-area: FOOT;
   position: fixed;
@@ -392,3 +605,67 @@ p.footer-description {
  ;
  margin-left: 100px;
 }
+
+.InfoBox{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+  align-items: center;
+}
+.DataCliente input::placeholder{
+font-size: medium;
+font-family: 'Montserrat', sans-serif;
+}
+.DataCliente{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.DataCliente input{
+  width: 100%;
+  height: 40px;
+}
+#Mensaje{
+  height: 80px;
+}
+.formBtn{
+    background: var(--blue);
+    border: 0;
+    width: 30%;
+    height: 30px;
+    color: #ffffff;
+    font-size: 1.2em;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.Description{
+  
+    grid-area: DESC;
+    display: flex;
+     
+    justify-content: center; 
+    align-items: center; 
+    background-color: rgb(250, 250, 250);
+    height: 100vh; 
+    width: 150vh;
+    margin: auto; 
+    gap: 4%;
+    box-shadow: 0 0 10px rgb(221, 221, 221);
+    
+}
+
+#ImgDes{
+  width: 50%;
+  height: auto;
+  
+}
+
+#txtDes{
+  font-size: 130%;
+}
+
+

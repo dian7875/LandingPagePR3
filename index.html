@@ -1,72 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/Style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
-      rel="stylesheet"
-    />
 
-    <title>CLimatizadora R Y C</title>
-  </head>
-  <body>
-    <header class="H">
-      <div class="header-contacts">
-        <div class="header-contacts-item">
-          <span> <h6>Nicoya ,Guanacaste ,Costa Rica</h6></span>
-        </div>
-        <div class="header-contacts-item">
-          <span><h6>climatizadoraryc@gmail.com</h6></span>
-        </div>
-        <div class="header-contacts-item">
-          <span><h6>+506 8837 3941</h6></span>
-        </div>
-      </div>
-      <div class="header-socials">
-        <div class="header-socials-item"><span>F</span></div>
-        <div class="header-socials-item"><span>T</span></div>
-        <div class="header-socials-item"><span>W</span></div>
-      </div>
-    </header>
-    <nav class="N">
-      <div class="nav-logo">
-        <img
-          src="./img/logo-removebg-preview.png"
-          alt=""
-          style="height: 98px"
-        />
-      </div>
-      <div class="nav-items">
-        <ul class="nav-list">
-          <li class="nav-list-item"><a href="#">Home</a></li>
-          <li class="nav-list-item"><a href="#">About</a></li>
-          <li class="nav-list-item"><a href="#">Services</a></li>
-          <li class="nav-list-item"><a href="#">Projects</a></li>
-          <li class="nav-list-item"><a href="#">Gallery</a></li>
-        </ul>
-      </div>
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/Style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet" />
+  <link rel="icon" href="./Asset/RYCLOG.png" type="image/x-icon">
+  <title>CLimatizadora R Y C</title>
+</head>
+
 
 
 
     
 
-    <div class="Rela">MARCAS Y RELACIONADOS</div>
-    <div class="Desc">DESCRIPCION</div>
-    <main class="M">
-      <ul id="IMGGAL">
-        <li>Services DINAMICOS</li>
-        <li>Services DINAMICOS</li>
-      </ul>
-    </main>
-    <span class="Gallery"> IMAGENES DINAMICAS </span>
-    <form class="FOR" action="">FORMULARIO PREGUNTAS</form>
+    
 
-    <aside class="C">ESPACIO DE CONTACTOS</aside>
+    
+ 
 
-    <footer class="F">
+
+<body>
+  <span id="Home"></span>
+  <header id="H" class="H">
+    <div class="header-contacts">
+      <span class="header-contacts-item">
+        <h6 id="Dir"></h6>
+      </span>
+      <span class="header-contacts-item">
+        <h6 id="Mail"></h6>
+      </span>
+      <span class="header-contacts-item">
+        <h6 id="Tel"></h6>
+      </span>
+    </div>
+    <div class="header-socials">
+      <a id="IG" class="social-icons" href="https://instagram.com/climatizadora_ryc?igshid=MzRlODBiNWFlZA=="
+        target="_blank" rel="noopener"><span class="N-V">IG</span></a>
+      <a id="W" class="social-icons" href="https://wa.me/50683541298" target="_blank" rel="noopener"><span
+          class="N-V">W</span></a>
+      <a id="FB" class="social-icons" href="https://www.facebook.com/climatizadoraRyC/" target="_blank"
+        rel="noopener"><span class="N-V">FB</span></a>
+    </div>
+  </header>
+  <nav class="N">
+    <img id="Logo" src="" alt="">
+    <ul class="Nav-list">
+      <li><a class="Nav-a" href="#Home">Home</a></li>
+      <li><a class="Nav-a" href="#">About</a></li>
+      <li><a class="Nav-a" href="#Services">Services</a></li>
+      <li><a class="Nav-a" href="#Gallery">Gallery</a></li>
+      <li><a class="Nav-a" href="#Contac">Contac</a></li>
+    </ul>
+  </nav>
+
+  <span class="Gallery" id="Gallery">
+    <h2>Algunos de nuestros Proyectos</h2>
+    <span id="Gal">
+    </span>
+  </span>
+  <div class="Description">
+    <img id="ImgDes">
+    <p id="txtDes"></p>
+  </div>
+  <main id="Services">
+    <h2>Nuestros Servicios</h2>
+    <div id="Serv">
+    </div>
+  </main>
+  <span id="Contac" class="Help">
+    <h2>Contactenos</h2>
+    <span class="FormCont">
+      <form class="InfoBox" action="">
+        <span class="DataCliente">
+          <input placeholder="Nombre" required />
+          <input placeholder="Telefono" required />
+          <input placeholder="Provincia" required />
+          <input placeholder="Ciudad" required />
+          <input placeholder="Email" required />
+          <input placeholder="Tema" required />
+          <input id="Mensaje" placeholder="Mensaje" />
+        </span>
+      </form>
+    </span>
+    <button class="formBtn" type="submit">Submit</button>
+  </span>
+
+
+
+  <aside class="C">ESPACIO DE CONTACTOS</aside>
+  <footer class="F">
       footer
       <div class="w-row">
         <div class="footer-column-img-description">
@@ -168,5 +192,8 @@
         <div id="copyright"><h6>Copyright&copy; 2023 Climatizadora RyC </h6></div>
       </div>
     </footer>
-  </body>
+</body>
+<script src="./JS/main.js"></script>
+
 </html>
+
