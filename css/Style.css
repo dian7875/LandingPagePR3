@@ -431,3 +431,30 @@ background-image: url("https://uploads-ssl.webflow.com/5966ea9a9217ca534caf139f/
   display: flex;
 
 }
+
+.Description{
+  
+    grid-area: DESC;
+    display: flex;
+     
+    justify-content: center; 
+    align-items: center; 
+    background-color: rgb(250, 250, 250);
+    height: 100vh; 
+    width: 150vh;
+    margin: auto; 
+    gap: 4%;
+    box-shadow: 0 0 10px rgb(221, 221, 221);
+    
+}
+
+#ImgDes{
+  width: 50%;
+  height: auto;
+  
+}
+
+#txtDes{
+  font-size: 130%;
+}
+
