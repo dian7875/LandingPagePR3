@@ -9,6 +9,22 @@ window.addEventListener("load", function (event) {
       this.document.getElementById("Mail").innerText = RYC.Correo;
       const LogoRYC = document.getElementById("Logo");
       LogoRYC.src = RYC.Logo;
+      this.document.getElementById("Contac").innerHTML = `
+      <h3>En ${RYC.companyName} Nos preocupamos por tu opinion</h3>
+      <br>
+      <h3>Podes contactarnos de las siguientes maneras</h3>
+      <br>
+      <h3><img class="Icon" src="https://cdn-icons-png.flaticon.com/128/480/480321.png"> ${RYC.Correo}</h3>
+      <br>
+      <h3><img class="Icon" src="https://cdn-icons-png.flaticon.com/128/597/597177.png"> ${RYC.Tel}</h3>
+      <br>
+      <h3><img class="Icon" src="https://cdn-icons-png.flaticon.com/128/733/733585.png"> ${RYC.Tel2}</h3>
+      <br>
+      <h3><img class="Icon" src="https://cdn-icons-png.flaticon.com/128/535/535239.png"> ${RYC.Direction}</h3>
+      <br>
+      <h3>Tambien puedes envianos un mensaje con tus datos y te contaremos en cuando podamos</h3>
+      `
+
       //// descripcion//
       const imagenDesc = this.document.getElementById("ImgDes");
         imagenDesc.src = RYC.imgDescription;
@@ -59,23 +75,39 @@ window.addEventListener("load", function (event) {
 
         ServiceCard.appendChild(serviceContainer);
         servContainer.appendChild(ServiceCard);
+
       });
+    
+//Fin de los servicios
+      //Carrusel de imagenes de proyectos
       RYC.carrusel.forEach(carrusel => {
         const imagen = document.createElement("img");
         imagen.src = carrusel.img;
         const imagenContainer = document.getElementById("Gal");
         imagenContainer.appendChild(imagen);
-      })
+      });//Fin de imagenes de proyectos
+
+      //Footer
+      this.document.getElementById("firstColum").innerHTML = `
+      <img class"FIcon" src="${RYC.Logo}"/>
+      <h2 class="FName">${RYC.companyName}</h2>
+      <p class="Fdescription">
+
+      ${RYC.description}.</p>
+      `
+      RYC.servicios.forEach((servicio) => {
+        const target = this.document.getElementById("SecondColum");
+        const fService = this.document.createElement("h4");
+        fService.textContent = servicio.Name;
+        target.appendChild(fService);
+
+
+
+      }
+      )
+
 
     });
-
-   
-    
-    
-
-
-
- ;
     
 
 });
