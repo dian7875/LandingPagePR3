@@ -67,7 +67,9 @@ body {
   background-repeat: no-repeat;
   text-decoration: none;
 }
-
+.social-icons:hover{
+  filter: invert(100%);
+}
 #FB {
   background-image: url('https://cdn-icons-png.flaticon.com/512/145/145802.png');
 }
@@ -119,6 +121,10 @@ body {
 #Logo {
   height: 200%;
 }
+#Logo:hover{
+    filter: invert(100%);
+  
+}
 
 /*Descripcion de la empresa*/
 .Description{
@@ -131,7 +137,7 @@ body {
   background-color: rgb(250, 250, 250);
   height: 70vh; 
   width: 150vh;
-  margin-top: 18%;
+  margin-top: 12%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: auto; 
@@ -152,7 +158,6 @@ font-size:xx-large;
 
 /*Galeria de proyectos y demas*/
 .Gallery {
- 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -286,8 +291,12 @@ font-size:xx-large;
   gap: 20px;
   align-items: center;
   box-shadow: 0 0 20px var(--blue);
+  border-radius: 5%;
 }
+.Help:hover h2{
+  color: var(--blue);
 
+}
 .FormCont{
   width: 100%;
   height: auto;
@@ -330,7 +339,9 @@ font-family: 'Montserrat', sans-serif;
     border-radius: 20px;
     cursor: pointer;
 }
-
+.formBtn:hover{
+  color: black;
+}
 /*Contactos*/
 .C{
   grid-area: CONT;
@@ -441,6 +452,9 @@ gap: 3%;
   background-position: center;
   background-repeat: no-repeat;
   text-decoration: none;
+}
+.FOT:hover{
+  filter: invert(50%);
 }
 .FIG{
   width: 100%;
