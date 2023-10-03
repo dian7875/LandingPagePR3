@@ -9,6 +9,22 @@ window.addEventListener("load", function (event) {
       this.document.getElementById("Mail").innerText = RYC.Correo;
       const LogoRYC = document.getElementById("Logo");
       LogoRYC.src = RYC.Logo;
+      this.document.getElementById("Contac").innerHTML = `
+      <h3>En ${RYC.companyName} Nos preocupamos por tu opinion</h3>
+      <br>
+      <h3>Podes contactarnos de las siguientes maneras</h3>
+      <br>
+      <h3><img class="Icon" src="https://cdn-icons-png.flaticon.com/128/480/480321.png"> ${RYC.Correo}</h3>
+      <br>
+      <h3><img class="Icon" src="https://cdn-icons-png.flaticon.com/128/597/597177.png"> ${RYC.Tel}</h3>
+      <br>
+      <h3><img class="Icon" src="https://cdn-icons-png.flaticon.com/128/733/733585.png"> ${RYC.Tel2}</h3>
+      <br>
+      <h3><img class="Icon" src="https://cdn-icons-png.flaticon.com/128/535/535239.png"> ${RYC.Direction}</h3>
+      <br>
+      <h3>Tambien puedes envianos un mensaje con tus datos y te contaremos en cuando podamos</h3>
+      `
+
       //Servicios de RYC
       const servContainer = document.getElementById("Serv");
       RYC.servicios.forEach((servicio) => {
@@ -56,6 +72,8 @@ window.addEventListener("load", function (event) {
         ServiceCard.appendChild(serviceContainer);
         servContainer.appendChild(ServiceCard);
       });
+      //Fin de los servicios
+      //Carrusel de imagenes de proyectos
       RYC.carrusel.forEach(carrusel => {
         const imagen = document.createElement("img");
         imagen.src = carrusel.img;
@@ -64,9 +82,7 @@ window.addEventListener("load", function (event) {
       })
 
     });
-
-
- ;
+    //Fin de imagenes de proyectos
     
 
 });
