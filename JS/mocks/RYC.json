@@ -11,35 +11,36 @@
     "Direction":"Nicoya, Guanacaste, Costa Rica",
     "history":"En RYC, acumulamos más de 5 años de experiencia laboral en la industria de la calefacción, ventilación y aire acondicionado. Nos enorgullece ofrecer uno de los servicios líderes en la provincia de Guanacaste",
     "servicios":[
-        {
-          "ServId":"1",
-          "ico":"https://cdn-icons-png.flaticon.com/128/9936/9936571.png",
-          "Name":"Instalacion De Aire Acondiconado",
-          "description":"Instalacion todo tipo de maquinas como condesadores, mini-splits, y demas"
-        },
+      {
+        "ServId": "4",
+        "ico":"https://twyzle-s3-1.s3.amazonaws.com/networks/1/sites/15511/precise-air-conditioning-corp-brands2-720x720.jpg?v=20220301-141857",
+        "Name": "Venta de equipos de A/C",
+        "description":"Venta de todo tipo de equipos desde termometros digitales, hasta condesadores y mini-splits de la mano de:"
+        
+      },
+        
         {
           "ServId": "2",
-          "ico":"https://cdn-icons-png.flaticon.com/128/11252/11252733.png",
+          "ico":"https://twyzle-s3-1.s3.amazonaws.com/networks/1/sites/15511/precise-air-conditioning-corp-reparacion-570x570.jpg",
           "Name": "Reparacion De equipos",
           "description":"Reparacion de todo tipo de equipos de aires acondicionado"
           
         },
         {
           "ServId": "3",
-          "ico":"https://cdn-icons-png.flaticon.com/128/9936/9936621.png",
+          "ico":"https://twyzle-s3-1.s3.amazonaws.com/networks/1/sites/15511/precise-air-conditioning-corp-mantenimiento2.jpg",
           "Name": "Mantenimientos",
           "description":"Brindamos mantenimiento a todos los equipos de aire acondicionado a todas las marcas del mercado con herramientas de calidad"
         },
         {
-          "ServId": "4",
-          "ico":"https://cdn-icons-png.flaticon.com/128/10048/10048327.png",
-          "Name": "Venta de equipos de A/C",
-          "description":"Venta de todo tipo de equipos desde termometros digitales, hasta condesadores y mini-splits de la mano de:"
-          
+          "ServId":"1",
+          "ico":"https://www.calderasyreformasvaldemoro.es/wp-content/uploads/2020/07/consejos-aire-acondicionado-1.jpg",
+          "Name":"Instalacion De Aire Acondiconado",
+          "description":"Instalacion todo tipo de maquinas como condesadores, mini-splits, y demas"
         },
         {
           "ServId": "5",
-          "ico":"https://cdn-icons-png.flaticon.com/128/4927/4927896.png",
+          "ico":"https://siempreauto.com/wp-content/uploads/sites/9/2022/06/Recargando-el-aire-acondicionado.jpg?resize=2048,1197",
           "Name": "Recarga De Aire Acondicionado Automotriz",
           "description": "Recarga de A/C vehicular con regfrigerantes de confianza"
         }

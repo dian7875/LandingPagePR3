@@ -199,91 +199,81 @@ body {
 /*Servicios*/
 #Services {
   grid-area: MAIN;
-  padding-top: 2%;
-  padding-bottom: 2%;
+  padding: 2% 0;
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  align-self: center;
 }
 #Serv {
-  width: 30%;
-  height: auto;
+  margin-top: 1%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8% 2%;
 }
-.ServiceContainer {
-  position: relative;
-  display: inline-block;
-  transition: transform 0.3s;
-  padding-top: 2%;
+.ServCard{
+  width: 25%;
 }
-.ServiceContainer:hover {
-  transform: scale(1.6);
-  text-shadow: 0 0 5px #77c3cf;
+.ServicePreview{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ServicePreview img{
+  width: 80%;
+  border-radius: 25% 0 0 25%;
 }
 
-.ServiceContainer:hover .ServiceInfo {
+.ServCard:hover .ServiceInfo{
   visibility: visible;
+  text-shadow: 0 0 5px #020101;
+  z-index: 80;
 }
-
-.ServiceContainer:hover h3 {
-  visibility: hidden;
+.ServCard:hover .ServicePreview img{
+  opacity: 10%;
+  transition: 1s;
 }
-
 .ServiceInfo img {
   height: 30%;
   width: auto;
 }
-
 .ServiceInfo {
-  height: 180px;
-  width: 570px;
   position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
   visibility: hidden;
+  width: 25%;
 }
-
-.ServiceInfo p {
-  padding-top: 4%;
-  width: 50%;
-}
-
-.InfoI {
-  align-items: start;
-  padding-right: 20%;
-}
-
-.marcas {
-  width: 140px;
-  height: 140px;
-}
-
-.ServicePreview {
+.ServiceContainer{
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
-  position: relative;
+}
+.ServiceInfo p {
+  padding-top: 4%;
+  width: 80%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.marcas {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 180px;
 }
 
-.icon-right {
-  display: flex;
-  flex-direction: row-reverse;
-}
 
 /*Formulario de ayuda*/
 .Help {
   width: 70%;
   height: auto;
   grid-area: FORM;
-  margin-top: 10%;
-  margin-left: 20%;
-  padding-top: 2%;
-  padding-bottom: 2%;
+  margin: 18% 0 10% 20%;
+  padding: 2% 0;
   display: flex;
   flex-direction: column;
   gap: 20px;

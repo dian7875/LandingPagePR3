@@ -46,7 +46,6 @@ window.addEventListener("load", function (event) {
         const servicePreview = document.createElement("span");
         servicePreview.className = "ServicePreview";
         if (parseInt(servicio.ServId) % 2 === 0) {
-          servicePreview.classList.add("icon-right");
         }
         servicePreview.innerHTML = `
             <img src="${servicio.ico}">
@@ -54,9 +53,6 @@ window.addEventListener("load", function (event) {
 
         const serviceInfo = document.createElement("span");
         serviceInfo.className = "ServiceInfo";
-        if (parseInt(servicio.ServId) % 2 === 0) {
-          serviceInfo.classList.add("InfoI")
-        }
         serviceInfo.innerHTML = `
                 <p>${servicio.description}</p> `;
 
