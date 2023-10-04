@@ -26,12 +26,7 @@ window.addEventListener("load", function (event) {
       <h3><img class="Icon" src="https://cdn-icons-png.flaticon.com/128/535/535239.png"> ${RYC.Direction}</h3>
       <br>
       <h3>Tambien puedes envianos un mensaje con tus datos y te contaremos en cuando podamos</h3>
-      `
-/*
-      //// descripcion//
-      const imagenDesc = this.document.getElementById("ImgDes");
-        imagenDesc.src = RYC.imgDescription;
-        this.document.getElementById("txtDes").innerText = RYC.description;*/
+      `;
       //Servicios de RYC
       const servContainer = document.getElementById("Serv");
       RYC.servicios.forEach((servicio) => {
