@@ -8,6 +8,9 @@ window.addEventListener("load", function (event) {
       this.document.getElementById("Tel").innerText = RYC.Tel;
       this.document.getElementById("Mail").innerText = RYC.Correo;
       const LogoRYC = document.getElementById("Logo");
+      this.document.getElementById("Description").innerHTML=`
+      <p class="Des">${RYC.history}</p>
+      `;
       LogoRYC.src = RYC.Logo;
       this.document.getElementById("Contac").innerHTML = `
       <h3>En ${RYC.companyName} Nos preocupamos por tu opinion</h3>
@@ -24,11 +27,11 @@ window.addEventListener("load", function (event) {
       <br>
       <h3>Tambien puedes envianos un mensaje con tus datos y te contaremos en cuando podamos</h3>
       `
-
+/*
       //// descripcion//
       const imagenDesc = this.document.getElementById("ImgDes");
         imagenDesc.src = RYC.imgDescription;
-        this.document.getElementById("txtDes").innerText = RYC.description;
+        this.document.getElementById("txtDes").innerText = RYC.description;*/
       //Servicios de RYC
       const servContainer = document.getElementById("Serv");
       RYC.servicios.forEach((servicio) => {
@@ -90,14 +93,14 @@ window.addEventListener("load", function (event) {
       //Footer
       this.document.getElementById("firstColum").innerHTML = `
       <img class"FIcon" src="${RYC.Logo}"/>
-      <h2 class="FName">${RYC.companyName}</h2>
+      <h2 class="FName"> ${RYC.companyName}</h2>
       <p class="Fdescription">
 
       ${RYC.description}.</p>
       `
       RYC.servicios.forEach((servicio) => {
         const target = this.document.getElementById("SecondColum");
-        const fService = this.document.createElement("h4");
+        const fService = this.document.createElement("p");
         fService.textContent = servicio.Name;
         target.appendChild(fService);
 

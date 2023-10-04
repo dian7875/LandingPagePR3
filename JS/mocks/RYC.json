@@ -9,6 +9,7 @@
     "Tel":"+506 8837-3941",
     "Tel2":"+506 8970-9802",
     "Direction":"Nicoya, Guanacaste, Costa Rica",
+    "history":"En RYC, acumulamos más de 5 años de experiencia laboral en la industria de la calefacción, ventilación y aire acondicionado. Nos enorgullece ofrecer uno de los servicios líderes en la provincia de Guanacaste",
     "servicios":[
         {
           "ServId":"1",
@@ -85,42 +86,42 @@
       "carrusel": [
         {
           "id": "1",
-          "img": "https://scontent.fsyq3-1.fna.fbcdn.net/v/t39.30808-6/316541305_152270017551138_7315625740093471814_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=49d041&_nc_ohc=Jc30xlDjYRoAX_sJoPW&_nc_ht=scontent.fsyq3-1.fna&oh=00_AfDGVw7OQ6SMwHD0TzpB9WmYNGNL3uB_Pn6zMdn0V_XYKA&oe=65159951"
+          "img": "/Asset/Gallery/F1.jpg"
 
         },
         {
           "id": "2",
-          "img": "https://scontent.fsyq3-1.fna.fbcdn.net/v/t39.30808-6/279052841_117224054277906_8789962501381876510_n.png?_nc_cat=100&ccb=1-7&_nc_sid=49d041&_nc_ohc=0tLLU-BxQHsAX8sojBd&_nc_ht=scontent.fsyq3-1.fna&oh=00_AfBotm0pxbsyzhyu8o3JiAWlTwnlfEin2WWndw2-haVqEw&oe=6515541E"
+          "img": "/Asset/Gallery/F2.jpg"
 
         },
         {
           "id": "3",
-          "img": "https://scontent.fsyq3-1.fna.fbcdn.net/v/t39.30808-6/278983072_116658087667836_1270271659921936745_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=49d041&_nc_ohc=aigIKHFpv44AX_HtFTY&_nc_ht=scontent.fsyq3-1.fna&oh=00_AfC4VlqRQBKpRgHHZpc3phUcwjYaNaGKbd_w8eJaKnVRXw&oe=651570CF"
+          "img": "/Asset/Gallery/F3.jpg"
 
         },
         {
           "id": "4",
-          "img": "https://scontent.fsyq3-1.fna.fbcdn.net/v/t39.30808-6/279422533_118688110798167_3623464002203032317_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=49d041&_nc_ohc=vfjRvuwi_AoAX_0akep&_nc_ht=scontent.fsyq3-1.fna&oh=00_AfDoX_zxr4wnC3iWA5uWtLDYs1ud68dDhYfOlvFVLBcUew&oe=6516C021"
+          "img": "/Asset/Gallery/F4.png"
 
         },
         {
           "id": "5",
-          "img": "https://scontent.fsyq3-1.fna.fbcdn.net/v/t39.30808-6/279300046_118688054131506_1594366086243631436_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=49d041&_nc_ohc=RiM0gqYDieQAX-DlxkA&_nc_ht=scontent.fsyq3-1.fna&oh=00_AfAlyzXaaULOa0yomElpgrLd3nXBTIfTkispyYjmTtAS7Q&oe=651673E8"
+          "img": "/Asset/Gallery/F5.jpg"
 
         },
         {
           "id": "6",
-          "img": "https://scontent.fsyq3-1.fna.fbcdn.net/v/t39.30808-6/280236996_121307563869555_7352877123199327152_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=49d041&_nc_ohc=hamisS-fgLUAX80hP4o&_nc_ht=scontent.fsyq3-1.fna&oh=00_AfAWkNe9X1DCmFWnLBCFPgzatOuQlpMkd1qAFqkXx_VdfA&oe=65168805"
+          "img": "/Asset/Gallery/F6.jpg"
 
         },
         {
           "id": "7",
-          "img": "https://scontent.fsyq3-1.fna.fbcdn.net/v/t39.30808-6/282547803_124121736921471_3862221051880492095_n.png?_nc_cat=101&ccb=1-7&_nc_sid=49d041&_nc_ohc=nby1_2e-zqMAX-a2YWy&_nc_ht=scontent.fsyq3-1.fna&oh=00_AfBVL6vs3N_Smvrf3ZduLLGUk9lsVk7RMo3dipJk3fFLoQ&oe=6515AE53"
+          "img": "/Asset/Gallery/F7.jpg"
 
         },
         {
           "id": "8",
-          "img": "https://scontent.fsyq3-1.fna.fbcdn.net/v/t39.30808-6/285626295_128461536487491_7039487088350676917_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=49d041&_nc_ohc=bODFSTz4CjkAX-k9eRM&_nc_ht=scontent.fsyq3-1.fna&oh=00_AfBn7mTaG3JR1bp2jXY0puIuyOjf0JYoEj3jr5ulQ35Hag&oe=6516D78C"
+          "img": "/Asset/Gallery/F8.jpg"
 
         },
         {
