@@ -144,7 +144,7 @@ a {
   font-size: large;
 }
 .Nav-list a:hover{
-  text-shadow: 0 0 10px rgb(3, 34, 47);
+  text-shadow: 0 0 10px rgb(66, 3, 3);
 }
 #Logo {
   height: 200%;
@@ -155,43 +155,40 @@ a {
 }
 
 /*Descripcion de la empresa*/
-.Description{
+
+.Des{
+  z-index: 2;
+  width: 70%;
+  color: rgb(0, 0, 0);
+  font-family:'Montserrat', sans-serif ;;
+  padding-top: 2%;
+  margin-left: 15px;
   
+}
+#Description{
+  margin-top: 38%;
+  background-color:var(--blue-light);
+  border-radius: 0 100% 0 0;
+  box-shadow: 0 0 30px #77c3cf;
+}
+.Font{
+  margin-top: 10vh;
   grid-area: DESC;
+  z-index: -5;
+  background-image: url("../Asset/Gallery/Description.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
   display: flex;
-   
-  justify-content: center; 
-  align-items: center; 
-  background-color: rgb(250, 250, 250);
-  height: 70vh; 
-  width: 150vh;
-  margin-top: 12%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: auto; 
-  gap: 4%;
-  box-shadow: 0 0 10px rgb(221, 221, 221);
-  border-radius: 2%;
-}
-
-#ImgDes{
-  margin-left: 1%;
-width: 45%;
-border-radius: 2% 5%;
-}
-
-#txtDes{
-font-size:xx-large;
+  box-shadow: 0 0 4000px #77c3cf;
 }
 
 /*Galeria de proyectos y demas*/
 .Gallery {
+  padding-top: 180px ;
   display: flex;
   flex-direction: column;
   align-items: center;
   grid-area: GALL;
-  padding-top: 18vh;
-  padding-bottom: 2%;
   gap: 20px;
 }
 #Gal{
@@ -312,6 +309,7 @@ font-size:xx-large;
   height: auto;
   grid-area: FORM;
   margin-top: 10%;
+  margin-left: 20%;
   padding-top: 2%;
   padding-bottom: 2%;
   display: flex;
@@ -323,7 +321,7 @@ font-size:xx-large;
 }
 .Help:hover h2{
   color: var(--blue);
-
+  text-shadow: 0 0 5px #77c3cf;
 }
 .FormCont{
   width: 100%;
@@ -637,6 +635,7 @@ p.footer-description {
   align-items: center;
 }
 .DataCliente input::placeholder{
+  padding-left: 2%;
 font-size: medium;
 font-family: 'Montserrat', sans-serif;
 }
@@ -676,6 +675,7 @@ font-family: 'Montserrat', sans-serif;
   justify-content: center;
 }
 #Contac{
+  padding-top: 14%;
 width: 50%;
 display: flex;
 flex-direction: column;
@@ -695,7 +695,7 @@ flex-direction: column;
   
 }
 .F h2{
-font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: 'Montserrat', sans-serif ;
 }
 .w-row{
   display: flex;
@@ -714,7 +714,7 @@ font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   align-items: center;
   justify-content: center;
 }
-#firstColum h3{
+#firstColum h2{
   font-size:x-large;
   grid-area: Text;
 }
@@ -723,23 +723,29 @@ font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   width: 100%;
 }
 #firstColum p{
-  font-size: large;
+  font-size: medium;
 grid-area: D;
 }
 
 #SecondColum{
-  padding-left: 5%;
+  padding-top: 2%;
+padding-left: 5%;
 display: flex;
-justify-content: center;
 width: 25%;
 height: auto;
 flex-direction: column;
 gap: 3%;
 }
+#SecondColum h4{
+  font-style: normal;
+}
+#SecondColum p:hover{
+  color: aqua;
+}
 #ThirColum{
+  padding-top: 2%;
   padding-left: 5%;
   display: flex;
-  justify-content: center;
   width: 25%;
   height: auto;
   flex-direction: column;
@@ -748,6 +754,8 @@ gap: 3%;
 #ThirColum a{
   text-decoration: none;
   color: white;
+  outline: 0;
+  width: 50%;
 }
 #ThirColum a:hover{
   color: aqua;
@@ -763,12 +771,13 @@ gap: 3%;
   padding-top: 40%;
 }
 
+
 #copyright{
   background-color: black;
   color: white;
  ;
 }
-#copyright h5{
+#copyright h6{
  margin-left: 100px;
 }
 .FOT{
