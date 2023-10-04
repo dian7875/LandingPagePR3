@@ -116,7 +116,7 @@ body {
   font-size: large;
 }
 .Nav-list a:hover{
-  text-shadow: 0 0 10px rgb(3, 34, 47);
+  text-shadow: 0 0 10px rgb(66, 3, 3);
 }
 #Logo {
   height: 200%;
@@ -132,43 +132,31 @@ body {
   z-index: 2;
   width: 70%;
   color: rgb(0, 0, 0);
- font-family:'Montserrat', sans-serif ;;
+  font-family:'Montserrat', sans-serif ;;
   padding-top: 2%;
   margin-left: 15px;
   
 }
 #Description{
-  margin-top: 37%;
-  height: 12%;
-  width: 100%;
+  margin-top: 38%;
   background-color:var(--blue-light);
   border-radius: 0 100% 0 0;
   box-shadow: 0 0 30px #77c3cf;
 }
 .Font{
-  margin-top: 12vh;
-  height: 100%;
+  margin-top: 10vh;
   grid-area: DESC;
   z-index: -5;
   background-image: url("../Asset/Gallery/Description.png");
   background-repeat: no-repeat;
   background-size: 100%;
   display: flex;
-  padding-bottom: 5%;
-}
-
-#ImgDes{
-  margin-left: 1%;
-width: 45%;
-border-radius: 2% 5%;
-}
-
-#txtDes{
-font-size:xx-large;
+  box-shadow: 0 0 4000px #77c3cf;
 }
 
 /*Galeria de proyectos y demas*/
 .Gallery {
+  padding-top: 180px ;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -441,6 +429,8 @@ gap: 3%;
 #ThirColum a{
   text-decoration: none;
   color: white;
+  outline: 0;
+  width: 50%;
 }
 #ThirColum a:hover{
   color: aqua;
