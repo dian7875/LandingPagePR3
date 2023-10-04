@@ -1,0 +1,478 @@
+:root {
+  --black: #000;
+  --blue-light: #c4e1e7;
+  --white: #ffff;
+  --blue: #77c3cf;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+    "HEAD HEAD HEAD HEAD"
+    "NAV NAV NAV NAV"
+    "DESC DESC DESC DESC"
+    "GALL GALL GALL GALL"
+    "MAIN MAIN MAIN MAIN"
+    "CONT FORM FORM FORM"
+    "FOOT FOOT FOOT FOOT";
+  font-family: 'Montserrat', sans-serif;
+}
+/*Header Style*/
+.H {
+  color: var(--white);
+  grid-area: HEAD;
+  background-color: var(--black);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 7vh;
+  /*Ventana Fija*/
+  position: fixed; 
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.header-contacts {
+  display: flex;
+  gap: 50px;
+}
+
+.header-contacts-items {
+  display: flex;
+  justify-content: center;
+
+}
+.header-socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 10%;
+  height: 80%;
+}
+.social-icons {
+  width: 15%;
+  height: 70%;
+  display: inline-block;
+  padding: 2%;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-decoration: none;
+}
+.social-icons:hover{
+  filter: invert(100%);
+}
+#FB {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/145/145802.png');
+}
+
+#IG {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/174/174855.png');
+}
+
+#W {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/174/174879.png');
+}
+
+/*Nav Barr Style*/
+.N {
+  grid-area: NAV;
+  background-color: var(--blue-light);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  /*Ventana Fija*/
+  position: fixed;
+  z-index: 9999;
+  top: 7vh;
+  left: 0; 
+  width: 100%;
+}
+.N-V{
+  visibility:hidden;
+}
+.Nav-list { 
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  list-style-type: none;
+}
+.Nav-a{
+  text-decoration: none;
+  color: var(--black);
+}
+
+.Nav-list a{
+  font-size: large;
+}
+.Nav-list a:hover{
+  text-shadow: 0 0 10px rgb(66, 3, 3);
+}
+#Logo {
+  height: 200%;
+}
+#Logo:hover{
+    filter: invert(100%);
+  
+}
+
+/*Descripcion de la empresa*/
+
+.Des{
+  z-index: 2;
+  width: 70%;
+  color: rgb(0, 0, 0);
+  font-family:'Montserrat', sans-serif ;;
+  padding-top: 2%;
+  margin-left: 15px;
+  
+}
+#Description{
+  margin-top: 38%;
+  background-color:var(--blue-light);
+  border-radius: 0 100% 0 0;
+  box-shadow: 0 0 30px #77c3cf;
+}
+.Font{
+  margin-top: 10vh;
+  grid-area: DESC;
+  z-index: -5;
+  background-image: url("../Asset/Gallery/Description.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  box-shadow: 0 0 4000px #77c3cf;
+}
+
+/*Galeria de proyectos y demas*/
+.Gallery {
+  padding-top: 180px ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: GALL;
+  gap: 20px;
+}
+#Gal{
+  display: flex;
+  width: 80%;
+  height: 600px;
+  gap: 1%;
+  flex-wrap: nowrap;
+  overflow: scroll;
+}
+
+#Gal::-webkit-scrollbar {
+  width: 10px; 
+}
+
+#Gal::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+#Gal::-webkit-scrollbar-thumb {
+  background-color: transparent; 
+  border: none; 
+}
+
+#Gal img {
+  width: 33.33%; 
+  height: auto; 
+  object-fit: cover; 
+}
+#Gal img:hover{
+  width: 50%; 
+  height: auto;
+  box-shadow: 0 0 30px #77c3cf;
+}
+
+/*Servicios*/
+#Services {
+  grid-area: MAIN;
+  padding: 2% 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#Serv {
+  margin-top: 1%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8% 2%;
+}
+.ServCard{
+  width: 25%;
+}
+.ServicePreview{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ServicePreview img{
+  width: 80%;
+  border-radius: 25% 0 0 25%;
+}
+
+.ServCard:hover .ServiceInfo{
+  visibility: visible;
+  text-shadow: 0 0 5px #020101;
+  z-index: 80;
+}
+.ServCard:hover .ServicePreview img{
+  opacity: 10%;
+  transition: 1s;
+}
+.ServiceInfo img {
+  height: 30%;
+  width: auto;
+}
+.ServiceInfo {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  visibility: hidden;
+  width: 25%;
+}
+.ServiceContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ServiceInfo p {
+  padding-top: 4%;
+  width: 80%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.marcas {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 180px;
+}
+
+
+/*Formulario de ayuda*/
+.Help {
+  width: 70%;
+  height: auto;
+  grid-area: FORM;
+  margin: 18% 0 10% 20%;
+  padding: 2% 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  box-shadow: 0 0 20px var(--blue);
+  border-radius: 5%;
+}
+.Help:hover h2{
+  color: var(--blue);
+  text-shadow: 0 0 5px #77c3cf;
+}
+.FormCont{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.InfoBox{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+  align-items: center;
+}
+.DataCliente input::placeholder{
+  padding-left: 2%;
+font-size: medium;
+font-family: 'Montserrat', sans-serif;
+}
+.DataCliente{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.DataCliente input{
+  width: 100%;
+  height: 40px;
+}
+#Mensaje{
+  height: 80px;
+}
+.formBtn{
+    background: var(--blue);
+    border: 0;
+    width: 30%;
+    height: 30px;
+    color: #ffffff;
+    font-size: 1.2em;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.formBtn:hover{
+  color: black;
+}
+/*Contactos*/
+.C{
+  grid-area: CONT;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#Contac{
+  padding-top: 14%;
+width: 50%;
+display: flex;
+flex-direction: column;
+}
+.Icon{
+  width: 5%;
+}
+
+/*Footer*/
+.F {
+  grid-area: FOOT;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  color: white;
+  margin-top: 4vh;
+  
+}
+.F h2{
+  font-family: 'Montserrat', sans-serif ;
+}
+.w-row{
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  column-gap: 20px;
+}
+#firstColum{
+  padding-top: 2%;
+  display: grid;
+  grid-template-areas: 
+  "Logo Text"
+  "Logo D";
+  width: 25%;
+  height: 60%;
+  align-items: center;
+  justify-content: center;
+}
+#firstColum h2{
+  font-size:x-large;
+  grid-area: Text;
+}
+#firstColum img{
+  grid-area: Logo;
+  width: 100%;
+}
+#firstColum p{
+  font-size: medium;
+grid-area: D;
+}
+
+#SecondColum{
+  padding-top: 2%;
+padding-left: 5%;
+display: flex;
+width: 25%;
+height: auto;
+flex-direction: column;
+gap: 3%;
+}
+#SecondColum h4{
+  font-style: normal;
+}
+#SecondColum p:hover{
+  color: aqua;
+}
+#ThirColum{
+  padding-top: 2%;
+  padding-left: 5%;
+  display: flex;
+  width: 25%;
+  height: auto;
+  flex-direction: column;
+  gap: 3%;
+}
+#ThirColum a{
+  text-decoration: none;
+  color: white;
+  outline: 0;
+  width: 50%;
+}
+#ThirColum a:hover{
+  color: aqua;
+}
+#FourColum{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ width: 25%;
+ gap: 2%;
+}
+#FourColum h2{
+  padding-top: 40%;
+}
+
+
+#copyright{
+  background-color: black;
+  color: white;
+ ;
+}
+#copyright h6{
+ margin-left: 100px;
+}
+.FOT{
+  padding: 2%;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-decoration: none;
+}
+.FOT:hover{
+  filter: invert(50%);
+}
+.FIG{
+  width: 100%;
+background-image: url("https://uploads-ssl.webflow.com/5966ea9a9217ca534caf139f/5c8dbfe70fcf5a0514c5b1da_Instagram%20Icon.svg");
+}
+.FFB{
+  width: 100%;
+  background-image: url("https://uploads-ssl.webflow.com/5966ea9a9217ca534caf139f/5c8dbe42e1e6034fdaba46f6_Facebook%20Icon.svg");
+}
+.FWH{
+  width: 100%;
+  background-image: url("https://cdn-icons-png.flaticon.com/128/152/152740.png");
+  filter: invert(100%);
+}
+.IC{
+  gap: 10px;
+  width: 25%;
+  height: 25%;
+  display: flex;
+
+}
+

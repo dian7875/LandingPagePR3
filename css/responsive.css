@@ -1,0 +1,234 @@
+/*@media screen and (max-width:1366px) {
+    
+    .Gallery {
+        width: 100%;
+        height: auto;
+        
+        }
+  
+        #Gal img{
+          width: 100%; 
+          height: auto; 
+          object-fit: cover; 
+        }
+        
+       
+  
+  
+  
+        .Description{
+    
+          width: 100%;
+          height: 130%;
+          
+      }
+  
+  
+     
+        
+      
+        .ServiceContainer {
+         
+          
+          font-size: 1rem;
+        }
+  
+        .ServiceContainer:hover {
+          transform: scale(1.2);
+        }
+  
+        h2{
+          
+          margin-bottom:3%;
+        }
+  
+  
+        .Help {
+          width: 70%;
+          height: auto;
+          margin-top: 10%;
+          
+          padding-top: 2%;
+        }
+  
+        .C{
+          grid-area: CONT;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+  
+        .Font{
+          margin-top: 16vh;
+        }
+      
+       
+      
+}
+
+
+@media screen and (max-width:720px) {
+    
+    .Gallery {
+      width: 100%;
+      height: auto;
+      
+      }
+
+      #Gal img{
+        width: 100%; 
+        height: auto; 
+        object-fit: cover; 
+      }
+      
+      #Gal img:hover{
+        width: auto; 
+        height: auto;  
+        box-shadow: none; 
+      }
+
+
+
+      .Description{
+  
+        width: 100%;
+        height: 130%;
+        
+    }
+
+
+    #Serv {
+        width: 70%;
+      }
+      
+    
+      .ServiceContainer {
+       
+        
+        font-size: 1rem;
+      }
+
+      .ServiceContainer:hover {
+        transform: scale(1.2);
+      }
+
+      h2{
+        
+        margin-bottom:10%;
+      }
+
+
+      .Help {
+        width: 100%;
+        height: auto;
+        margin-top: 10%;
+        margin-left: -20%;
+        padding-top: 2%;
+      }
+
+      .C{
+        grid-area: CONT;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .Font{
+        margin-top: 16vh;
+      }
+    
+      #copyright h6{
+        margin-left: -3px;
+       }
+}*/
+@media screen and (max-width:964px) {
+
+  .F{
+    width: 160%;
+  }
+  .C{
+    margin-left: 20px;
+    width: 160%;
+    display: flex;
+    justify-content: start;
+  }
+  .Help{
+    display: flex;
+    justify-content: end;
+    width: 160%;
+    margin-left: 60px;
+    position: relative;
+    left: 30%;
+  }
+#Services {
+  width: 160%;
+  display: flex;
+  justify-content: center;
+}
+
+#Serv {
+  width: 60%;
+ 
+  height: 600px;
+  display: flex;
+  overflow: scroll;
+}
+.ServiceInfo{
+ position: relative;
+ left: 50%;
+}
+.ServCard {
+  width: 190%; 
+  height: 100%;
+}
+
+.ServiceContainer {
+  width: 100%;
+  height: 100%;
+}
+
+.ServicePreview {
+  width: 100%;
+  height: 100%;
+}
+
+.ServicePreview img {
+  width: 100%;
+  height: 90%;
+  border-radius: 25% 0 0 25%;
+}
+
+  .Gallery {
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 120%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    #Gal img{
+      width: 100%; 
+      height: auto; 
+      object-fit: cover; 
+    }
+    #Gal img:hover{
+      width: 100%; 
+      height: auto; 
+      object-fit: cover;
+    }
+    
+  .Font{
+    
+    width: 160%;
+  }
+  #firstColum img{
+    visibility: hidden;
+
+  }
+ 
+}
+

@@ -1,0 +1,156 @@
+
+{
+    "id":"RYC",
+    "Logo":"/Asset/RYCLOG.png"    ,
+    "companyName":"Climatizadora RyC",
+    "description":"Servicio de calefaccion Ventilacion y Aire Acondicionado",
+    "imgDescription":"https://scontent.fsyq1-1.fna.fbcdn.net/v/t39.30808-6/310336900_136074462504027_7199796255195427754_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=49d041&_nc_ohc=ODpcmTi7As4AX_fBVIJ&_nc_ht=scontent.fsyq1-1.fna&oh=00_AfC6Za02GcaME-tGEHw3MNc1KO2dJNwgApj8zRqs1-aQYw&oe=6520FEE6",
+    "Correo":"climatizadoraryc@gmail.com",
+    "Tel":"+506 8837-3941",
+    "Tel2":"+506 8970-9802",
+    "Direction":"Nicoya, Guanacaste, Costa Rica",
+    "history":"En RYC, acumulamos más de 5 años de experiencia laboral en la industria de la calefacción, ventilación y aire acondicionado. Nos enorgullece ofrecer uno de los servicios líderes en la provincia de Guanacaste",
+    "servicios":[
+      {
+        "ServId": "4",
+        "ico":"https://twyzle-s3-1.s3.amazonaws.com/networks/1/sites/15511/precise-air-conditioning-corp-brands2-720x720.jpg?v=20220301-141857",
+        "Name": "Venta de equipos de A/C",
+        "description":"Venta de todo tipo de equipos desde termometros digitales, hasta condesadores y mini-splits de la mano de:"
+        
+      },
+        
+        {
+          "ServId": "2",
+          "ico":"https://twyzle-s3-1.s3.amazonaws.com/networks/1/sites/15511/precise-air-conditioning-corp-reparacion-570x570.jpg",
+          "Name": "Reparacion De equipos",
+          "description":"Reparacion de todo tipo de equipos de aires acondicionado"
+          
+        },
+        {
+          "ServId": "3",
+          "ico":"https://twyzle-s3-1.s3.amazonaws.com/networks/1/sites/15511/precise-air-conditioning-corp-mantenimiento2.jpg",
+          "Name": "Mantenimientos",
+          "description":"Brindamos mantenimiento a todos los equipos de aire acondicionado a todas las marcas del mercado con herramientas de calidad"
+        },
+        {
+          "ServId":"1",
+          "ico":"https://www.calderasyreformasvaldemoro.es/wp-content/uploads/2020/07/consejos-aire-acondicionado-1.jpg",
+          "Name":"Instalacion De Aire Acondiconado",
+          "description":"Instalacion todo tipo de maquinas como condesadores, mini-splits, y demas"
+        },
+        {
+          "ServId": "5",
+          "ico":"https://siempreauto.com/wp-content/uploads/sites/9/2022/06/Recargando-el-aire-acondicionado.jpg?resize=2048,1197",
+          "Name": "Recarga De Aire Acondicionado Automotriz",
+          "description": "Recarga de A/C vehicular con regfrigerantes de confianza"
+        }
+
+      ],
+      "Relacionados":[
+      {
+        "id": "1",
+        "marca":"https://cdn.icon-icons.com/icons2/1834/PNG/512/iconfindermitsubishilogo4141793-115967_115914.png",
+        "Name": "Mitsubishi Electric"
+      },
+      {
+        "id": "1",
+        "marca":"https://http2.mlstatic.com/D_NP_831880-MLA47411605785_092021-T.webp",
+        "Name": "Carrier"
+      },
+      {
+        "id": "1",
+        "marca":"https://cdn-icons-png.flaticon.com/128/882/882722.png",
+        "Name": "LG"
+      },
+      {
+        "id":"5",
+        "marca":"https://pic.nximg.cn/file/20160415/13581641_110718184168_2.jpg",
+        "Name":"Icelong"
+      },
+      {
+        "id":"2",
+        "marca":"https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://totalherramientas.com.ar/wp-content/uploads/2019/08/logo-total-variante4.png",
+        "Name":"Total"
+      },
+      
+      { 
+        "id": "4",
+        "marca": "/Asset/Beirute.png",
+        "Name": "Beirute"
+      },
+      {
+        "id": "4",
+        "marca":"/Asset/RefriMundo.png",
+        "Name": "RefriMundo"
+     }
+      ],
+      "carrusel": [
+        {
+          "id": "1",
+          "img": "/Asset/Gallery/F1.jpg"
+
+        },
+        {
+          "id": "2",
+          "img": "/Asset/Gallery/F2.jpg"
+
+        },
+        {
+          "id": "3",
+          "img": "/Asset/Gallery/F3.jpg"
+
+        },
+        {
+          "id": "4",
+          "img": "/Asset/Gallery/F4.png"
+
+        },
+        {
+          "id": "5",
+          "img": "/Asset/Gallery/F5.jpg"
+
+        },
+        {
+          "id": "6",
+          "img": "/Asset/Gallery/F6.jpg"
+
+        },
+        {
+          "id": "7",
+          "img": "/Asset/Gallery/F7.jpg"
+
+        },
+        {
+          "id": "8",
+          "img": "/Asset/Gallery/F8.jpg"
+
+        },
+        {
+          "id": "9",
+          "img": "/Asset/Gallery/F9.jpg"
+
+        },
+        {
+          "id": "10",
+          "img": "/Asset/Gallery/F10.jpg"
+
+        },
+        {
+          "id": "11",
+          "img": "/Asset/Gallery/F11.jpg"
+
+        },
+        {
+          "id": "12",
+          "img": "/Asset/Gallery/F12.jpg"
+
+        }
+        ,
+        {
+          "id": "12",
+          "img": "/Asset/Gallery/F13.jpg"
+
+        }
+      ]
+    
+}
