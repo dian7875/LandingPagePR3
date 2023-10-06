@@ -138,14 +138,14 @@ body {
 }
 #Description{
   width: 100%;
-  margin-top: 38%;
+  margin-top: 40%;
   background-color:#6580bcc2;
   border-radius: 0 100% 0 0;
   box-shadow: 50px 0 5000px #40547e;
 }
 .Font{
   height: calc(100%-25px);
-  margin-top: 10vh;
+  margin-top: 16vh;
   grid-area: DESC;
   z-index: -5;
   background-image: url("../Asset/Gallery/Description.png");
