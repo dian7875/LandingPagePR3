@@ -9,7 +9,7 @@ window.addEventListener("load", function (event) {
       this.document.getElementById("Mail").innerText = RYC.Correo;
       const LogoRYC = document.getElementById("Logo");
       this.document.getElementById("Description").innerHTML = `
-      <p class="Des">${RYC.history}</p>
+      <p id="Conocenos" class="Des">${RYC.history}</p>
       `;
       LogoRYC.src = RYC.Logo;
       this.document.getElementById("Contac").innerHTML = `
