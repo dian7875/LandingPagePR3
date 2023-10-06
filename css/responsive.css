@@ -1,148 +1,3 @@
-/*@media screen and (max-width:1366px) {
-    
-    .Gallery {
-        width: 100%;
-        height: auto;
-        
-        }
-  
-        #Gal img{
-          width: 100%; 
-          height: auto; 
-          object-fit: cover; 
-        }
-        
-       
-  
-  
-  
-        .Description{
-    
-          width: 100%;
-          height: 130%;
-          
-      }
-  
-  
-     
-        
-      
-        .ServiceContainer {
-         
-          
-          font-size: 1rem;
-        }
-  
-        .ServiceContainer:hover {
-          transform: scale(1.2);
-        }
-  
-        h2{
-          
-          margin-bottom:3%;
-        }
-  
-  
-        .Help {
-          width: 70%;
-          height: auto;
-          margin-top: 10%;
-          
-          padding-top: 2%;
-        }
-  
-        .C{
-          grid-area: CONT;
-          width: 100%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-  
-        .Font{
-          margin-top: 16vh;
-        }
-      
-       
-      
-}
-
-
-@media screen and (max-width:720px) {
-    
-    .Gallery {
-      width: 100%;
-      height: auto;
-      
-      }
-
-      #Gal img{
-        width: 100%; 
-        height: auto; 
-        object-fit: cover; 
-      }
-      
-      #Gal img:hover{
-        width: auto; 
-        height: auto;  
-        box-shadow: none; 
-      }
-
-
-
-      .Description{
-  
-        width: 100%;
-        height: 130%;
-        
-    }
-
-
-    #Serv {
-        width: 70%;
-      }
-      
-    
-      .ServiceContainer {
-       
-        
-        font-size: 1rem;
-      }
-
-      .ServiceContainer:hover {
-        transform: scale(1.2);
-      }
-
-      h2{
-        
-        margin-bottom:10%;
-      }
-
-
-      .Help {
-        width: 100%;
-        height: auto;
-        margin-top: 10%;
-        margin-left: -20%;
-        padding-top: 2%;
-      }
-
-      .C{
-        grid-area: CONT;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .Font{
-        margin-top: 16vh;
-      }
-    
-      #copyright h6{
-        margin-left: -3px;
-       }
-}*/
 @media screen and (max-width:964px) {
 
   .F{
@@ -209,18 +64,16 @@
     justify-content: center;
     align-items: center;
     }
-
-    #Gal img{
-      width: 100%; 
-      height: auto; 
-      object-fit: cover; 
+    #imagenes img:hover{
+      transform:scale(2.6) ;
     }
-    #Gal img:hover{
-      width: 100%; 
-      height: auto; 
-      object-fit: cover;
-    }
-    
+    #anterior {
+      height: 100%;
+     }
+     
+     #siguiente {
+       height: 100%;
+     }
   .Font{
     
     width: 160%;
