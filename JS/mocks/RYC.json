@@ -83,6 +83,11 @@
       ],
       "carrusel": [
         {
+          "id": "8",
+          "img": "/Asset/Gallery/F8.jpg"
+
+        },
+        {
           "id": "1",
           "img": "/Asset/Gallery/F1.jpg"
 
@@ -93,23 +98,19 @@
 
         },
         {
-          "id": "3",
-          "img": "/Asset/Gallery/F3.jpg"
-
-        },
-        {
           "id": "4",
           "img": "/Asset/Gallery/F4.png"
 
         },
         {
-          "id": "5",
-          "img": "/Asset/Gallery/F5.jpg"
+          "id": "3",
+          "img": "/Asset/Gallery/F3.jpg"
 
         },
+  
         {
-          "id": "6",
-          "img": "/Asset/Gallery/F6.jpg"
+          "id": "5",
+          "img": "/Asset/Gallery/F5.jpg"
 
         },
         {
@@ -118,8 +119,8 @@
 
         },
         {
-          "id": "8",
-          "img": "/Asset/Gallery/F8.jpg"
+          "id": "6",
+          "img": "/Asset/Gallery/F6.jpg"
 
         },
         {
@@ -144,10 +145,23 @@
         }
         ,
         {
-          "id": "12",
+          "id": "13",
           "img": "/Asset/Gallery/F13.jpg"
 
         }
+        ,
+        {
+          "id": "14",
+          "img": "/Asset/Gallery/F14.jpg"
+
+        }
+        ,
+        {
+          "id": "15",
+          "img": "/Asset/Gallery/F15.jpg"
+
+        }
+      
       ]
     
 }

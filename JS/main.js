@@ -8,7 +8,7 @@ window.addEventListener("load", function (event) {
       this.document.getElementById("Tel").innerText = RYC.Tel;
       this.document.getElementById("Mail").innerText = RYC.Correo;
       const LogoRYC = document.getElementById("Logo");
-      this.document.getElementById("Description").innerHTML=`
+      this.document.getElementById("Description").innerHTML = `
       <p class="Des">${RYC.history}</p>
       `;
       LogoRYC.src = RYC.Logo;
@@ -71,16 +71,46 @@ window.addEventListener("load", function (event) {
         servContainer.appendChild(ServiceCard);
 
       });
-    
-//Fin de los servicios
+
+      //Fin de los servicios
       //Carrusel de imagenes de proyectos
       RYC.carrusel.forEach(carrusel => {
+        const imagenContainer = document.getElementById("imagenes");
         const imagen = document.createElement("img");
         imagen.src = carrusel.img;
-        const imagenContainer = document.getElementById("Gal");
-        imagenContainer.appendChild(imagen);
+        const lisImg = this.document.createElement("li");
+        lisImg.appendChild(imagen);
+        imagenContainer.appendChild(lisImg);
       });//Fin de imagenes de proyectos
+      //Animacion de scroll imagenes
+      const ListImg = document.getElementById("imagenes");
+      const anterior = document.getElementById("anterior");
+      const siguiente = document.getElementById("siguiente");
+      const porcentajeImagen = 33.3; 
+      const numImagenes = ListImg.children.length;
+      let index = 0;
 
+      siguiente.addEventListener("click", () => {
+        index += 1;
+        if (index >= numImagenes) {
+          index = 0;
+        }
+        actualizarCarrusel();
+      });
+
+      anterior.addEventListener("click", () => {
+        index -= 1;
+        if (index < 0) {
+          index = numImagenes - 1;
+        }
+        actualizarCarrusel();
+      });
+
+      function actualizarCarrusel() {
+        const desplazamiento = -index * porcentajeImagen;
+        ListImg.style.transform = `translateX(${desplazamiento}%)`;
+      }
+     
       //Footer
       this.document.getElementById("firstColum").innerHTML = `
       <img class"FIcon" src="${RYC.Logo}"/>
@@ -102,7 +132,7 @@ window.addEventListener("load", function (event) {
 
 
     });
-    
+
 
 });
 

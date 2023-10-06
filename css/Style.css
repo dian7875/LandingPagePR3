@@ -17,8 +17,8 @@ body {
     "HEAD HEAD HEAD HEAD"
     "NAV NAV NAV NAV"
     "DESC DESC DESC DESC"
-    "GALL GALL GALL GALL"
     "MAIN MAIN MAIN MAIN"
+    "GALL GALL GALL GALL"
     "CONT FORM FORM FORM"
     "FOOT FOOT FOOT FOOT";
   font-family: 'Montserrat', sans-serif;
@@ -155,52 +155,10 @@ body {
   box-shadow: 0 0 4000px #374b74;
 }
 
-/*Galeria de proyectos y demas*/
-.Gallery {
-  padding-top: 180px ;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  grid-area: GALL;
-  gap: 20px;
-}
-#Gal{
-  display: flex;
-  width: 80%;
-  height: 600px;
-  gap: 1%;
-  flex-wrap: nowrap;
-  overflow: scroll;
-}
-
-#Gal::-webkit-scrollbar {
-  width: 10px; 
-}
-
-#Gal::-webkit-scrollbar-track {
-  background-color: transparent;
-}
-
-#Gal::-webkit-scrollbar-thumb {
-  background-color: transparent; 
-  border: none; 
-}
-
-#Gal img {
-  width: 33.33%; 
-  height: auto; 
-  object-fit: cover; 
-}
-#Gal img:hover{
-  width: 50%; 
-  height: auto;
-  box-shadow: 0 0 30px #77c3cf;
-}
-
 /*Servicios*/
 #Services {
   grid-area: MAIN;
-  padding: 2% 0;
+  margin-top: 6%;
   width: 100%;
   height: 100%;
   display: flex;
@@ -265,6 +223,80 @@ body {
   justify-content: center;
   width: 100%;
   height: 180px;
+}
+
+/*Galeria de proyectos y demas*/
+.Gallery {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: GALL;
+  width: 100%;
+  height: 100%;
+  text-shadow: 0 0 5px #77c3cf;
+}
+#Gal{
+  width: 80%;
+  height: auto;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 5% 1fr 5%;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3%;
+}
+
+#imagenes {
+  gap: 5px;
+  grid-row: 1/4;
+  grid-column: 1/4;
+  list-style-type: none;
+  display: flex;
+  transition: transform 0.5s ease;
+}
+#imagenes img:hover{
+  box-shadow: 0 0 20px var(--blue);
+}
+#imagenes li { 
+  flex: 0 0 33.3%;
+}
+
+#imagenes img { 
+  
+  width: 100%;
+  height: 500px;
+}
+#anterior {
+  grid-row: 2/3;
+  grid-column: 1/2;
+  transform: translateY(-50%);
+  cursor: pointer;
+  width: 100%;
+  left: 1%;
+}
+
+#siguiente {
+  justify-content: ce;
+  grid-row: 2/3;
+  grid-column: 3/4;
+  width: 100%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  right: 1%;
+}
+#anterior img {
+ width: 100%;
+}
+#anterior img:hover {
+  width: 120%;
+ }
+#siguiente img {
+  width: 100%;
+}
+#siguiente img:hover {
+  width: 120%;
 }
 
 
