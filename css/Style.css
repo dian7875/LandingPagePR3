@@ -108,6 +108,7 @@ body {
   list-style-type: none;
 }
 .Nav-a{
+  font-size: xx-large;
   text-decoration: none;
   color: var(--black);
 }
@@ -237,6 +238,7 @@ body {
   text-shadow: 0 0 5px #77c3cf;
 }
 #Gal{
+  padding-top: 5%;
   width: 80%;
   height: auto;
   overflow: hidden;
