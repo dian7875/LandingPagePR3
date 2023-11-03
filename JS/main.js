@@ -2,7 +2,8 @@ window.addEventListener("load", function (event) {
   console.log("'Todos los recursos terminaron de cargar!");
   /*loadContened();*/
   //loadIntro();
-  console.log(RYCDATA);
+  //console.log(RYCDATA);
+  fetchData();
 });
 
 let RYCDATA;
@@ -10,9 +11,7 @@ let RYCDATA;
 function fetchData() {
   return fetch('http://localhost:3000/info-general')
     .then(response => response.json())
-    .then(RYC => {
-      RYCDATA = RYC;
-    });
+    .then(RYC => console.log(json));
     
 }
 
