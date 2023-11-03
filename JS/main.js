@@ -1,9 +1,51 @@
 window.addEventListener("load", function (event) {
   console.log("'Todos los recursos terminaron de cargar!");
-  loadContened();
+  /*loadContened();*/
+  //loadIntro();
+  console.log(RYCDATA);
 });
 
+let RYCDATA;
 
+function fetchData() {
+  return fetch('http://localhost:3000/info-general')
+    .then(response => response.json())
+    .then(RYC => {
+      RYCDATA = RYC;
+    });
+    
+}
+
+/*
+function loadIntro() {
+  const RYC = RYCDATA;
+  //Info General de RYC
+  this.document.getElementById("Dir").innerText = RYC.direction;
+  this.document.getElementById("Tel").innerText = RYC.tel;
+  this.document.getElementById("Mail").innerText = RYC.correo;
+  const LogoRYC = document.getElementById("Logo");
+  this.document.getElementById("Description").innerHTML = `
+    <p id="Conocenos" class="Des">${RYC.history}</p>
+    `;
+  LogoRYC.src = RYC.logo;
+  this.document.getElementById("Contac").innerHTML = `
+    <h3>En ${RYC.companyName} Nos preocupamos por tu opinion</h3>
+    <br>
+    <h3>Podes contactarnos de las siguientes maneras</h3>
+    <br>
+    <h3><img class="Icon" src="https://cdn-icons-png.flaticon.com/128/480/480321.png"> ${RYC.correo}</h3>
+    <br>
+    <h3><img class="Icon" src="https://cdn-icons-png.flaticon.com/128/597/597177.png"> ${RYC.tel}</h3>
+    <br>
+    <h3><img class="Icon" src="https://cdn-icons-png.flaticon.com/128/733/733585.png"> ${RYC.tel2}</h3>
+    <br>
+    <h3><img class="Icon" src="https://cdn-icons-png.flaticon.com/128/535/535239.png"> ${RYC.direction}</h3>
+    <br>
+    <h3>Tambien puedes envianos un mensaje con tus datos y te contaremos en cuando podamos</h3>
+    `;
+}
+
+/*
 let RYCDATA;
 
 function fetchData() {
@@ -161,3 +203,4 @@ function loadContened() {
       loadService();
     });
 }
+*/
