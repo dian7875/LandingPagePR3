@@ -1,21 +1,23 @@
 window.addEventListener("load", function (event) {
   console.log("'Todos los recursos terminaron de cargar!");
-  /*loadContened();*/
+  loadContened();
   //loadIntro();
   //console.log(RYCDATA);
   fetchData();
 });
 
+
 let RYCDATA;
 
 function fetchData() {
-  return fetch('http://localhost:3000/info-general')
+  return fetch('http://localhost:3000/info-general/1')
     .then(response => response.json())
-    .then(RYC => console.log(json));
-    
+    .then(RYC => {
+      RYCDATA = RYC;
+    });
 }
 
-/*
+
 function loadIntro() {
   const RYC = RYCDATA;
   //Info General de RYC
@@ -43,45 +45,34 @@ function loadIntro() {
     <h3>Tambien puedes envianos un mensaje con tus datos y te contaremos en cuando podamos</h3>
     `;
 }
+function loadFoot() {
+  const RYC = RYCDATA;
+  //Footer
+  this.document.getElementById("firstColum").innerHTML = `
+  <img class"FIcon" src="${RYC.logo}"/>
+  <h2 class="FName"> ${RYC.companyName}</h2>
+  <p class="Fdescription">
 
-/*
-let RYCDATA;
-
-function fetchData() {
-  return fetch('./JS/mocks/RYC.json')
-    .then(response => response.json())
-    .then(RYC => {
-      RYCDATA = RYC;
+  ${RYC.description}.</p>
+  `
+  /*RYC.servicios.forEach((servicio) => {
+    const target = this.document.getElementById("SecondColum");
+    const fService = this.document.createElement("p");
+    fService.textContent = servicio.Name;
+    target.appendChild(fService);
+  }
+  )*/
+};
+function loadContened() {
+  fetchData()
+    .then(() => {
+     loadIntro();
+     loadFoot();
+     // loadImage();
+      //loadService();
     });
 }
-
-function loadIntro() {
-  const RYC = RYCDATA;
-  //Info General de RYC
-  this.document.getElementById("Dir").innerText = RYC.Direction;
-  this.document.getElementById("Tel").innerText = RYC.Tel;
-  this.document.getElementById("Mail").innerText = RYC.Correo;
-  const LogoRYC = document.getElementById("Logo");
-  this.document.getElementById("Description").innerHTML = `
-    <p id="Conocenos" class="Des">${RYC.history}</p>
-    `;
-  LogoRYC.src = RYC.Logo;
-  this.document.getElementById("Contac").innerHTML = `
-    <h3>En ${RYC.companyName} Nos preocupamos por tu opinion</h3>
-    <br>
-    <h3>Podes contactarnos de las siguientes maneras</h3>
-    <br>
-    <h3><img class="Icon" src="https://cdn-icons-png.flaticon.com/128/480/480321.png"> ${RYC.Correo}</h3>
-    <br>
-    <h3><img class="Icon" src="https://cdn-icons-png.flaticon.com/128/597/597177.png"> ${RYC.Tel}</h3>
-    <br>
-    <h3><img class="Icon" src="https://cdn-icons-png.flaticon.com/128/733/733585.png"> ${RYC.Tel2}</h3>
-    <br>
-    <h3><img class="Icon" src="https://cdn-icons-png.flaticon.com/128/535/535239.png"> ${RYC.Direction}</h3>
-    <br>
-    <h3>Tambien puedes envianos un mensaje con tus datos y te contaremos en cuando podamos</h3>
-    `;
-}
+/*
 
 function loadService() {
   //Servicios de RYC
@@ -131,24 +122,7 @@ function loadService() {
   });
 
 };
-function loadFoot() {
-  const RYC = RYCDATA;
-  //Footer
-  this.document.getElementById("firstColum").innerHTML = `
-  <img class"FIcon" src="${RYC.Logo}"/>
-  <h2 class="FName"> ${RYC.companyName}</h2>
-  <p class="Fdescription">
 
-  ${RYC.description}.</p>
-  `
-  RYC.servicios.forEach((servicio) => {
-    const target = this.document.getElementById("SecondColum");
-    const fService = this.document.createElement("p");
-    fService.textContent = servicio.Name;
-    target.appendChild(fService);
-  }
-  )
-};
 
 function loadImage() {
   const RYC = RYCDATA;
@@ -193,13 +167,4 @@ function loadImage() {
 
 
 
-function loadContened() {
-  fetchData()
-    .then(() => {
-      loadFoot();
-      loadImage();
-      loadIntro();
-      loadService();
-    });
-}
 */
