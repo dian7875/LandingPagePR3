@@ -83,34 +83,7 @@ window.addEventListener("load", function (event) {
         imagenContainer.appendChild(lisImg);
       });//Fin de imagenes de proyectos
       //Animacion de scroll imagenes
-      const ListImg = document.getElementById("imagenes");
-      const anterior = document.getElementById("anterior");
-      const siguiente = document.getElementById("siguiente");
-      const porcentajeImagen = 33.3; 
-      const numImagenes = ListImg.children.length;
-      let index = 0;
-
-      siguiente.addEventListener("click", () => {
-        index += 1;
-        if (index >= numImagenes) {
-          index = 0;
-        }
-        actualizarCarrusel();
-      });
-
-      anterior.addEventListener("click", () => {
-        index -= 1;
-        if (index < 0) {
-          index = numImagenes - 1;
-        }
-        actualizarCarrusel();
-      });
-
-      function actualizarCarrusel() {
-        const desplazamiento = -index * porcentajeImagen;
-        ListImg.style.transform = `translateX(${desplazamiento}%)`;
-      }
-     
+  
       //Footer
       this.document.getElementById("firstColum").innerHTML = `
       <img class"FIcon" src="${RYC.Logo}"/>
