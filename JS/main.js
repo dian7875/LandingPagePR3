@@ -10,7 +10,7 @@ window.addEventListener("load", function (event) {
 let RYCDATA;
 
 function fetchData() {
-  return fetch('http://localhost:3000/info-general/1')
+  return fetch('http://localhost:3000/api/infogeneral/1')
     .then(response => response.json())
     .then(RYC => {
       RYCDATA = RYC;
@@ -159,3 +159,4 @@ function loadService() {
 });
 
 
+*/
