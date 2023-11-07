@@ -241,7 +241,7 @@ body {
   padding-top: 5%;
   width: 80%;
   height: auto;
-  overflow: hidden;
+  overflow-y: auto; /* Agrega esto para habilitar el desplazamiento vertical */
   display: grid;
   grid-template-columns: 5% 1fr 5%;
   grid-template-rows: 1fr 1fr 1fr;
@@ -249,7 +249,32 @@ body {
   align-items: center;
   border-radius: 3%;
 }
+#SwapImg{
+  width: 20%;
+  padding-top: -20%;
+}
 
+.swapping{
+  margin-top: -15%;
+  text-align: center;
+}
+#Gallery:hover .swapping {
+  display: none;
+}
+/* Ocultar la barra de desplazamiento vertical en Google Chrome */
+#Gal::-webkit-scrollbar {
+  width: 0;
+}
+
+/* Opcional: Estilo de fondo de la barra de desplazamiento */
+#Gal::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Opcional: Estilo del pulgar de la barra de desplazamiento */
+#Gal::-webkit-scrollbar-thumb {
+  background: transparent;
+}
 #imagenes {
   gap: 5px;
   grid-row: 1/4;
@@ -270,36 +295,8 @@ body {
   width: 100%;
   height: 500px;
 }
-#anterior {
-  grid-row: 2/3;
-  grid-column: 1/2;
-  transform: translateY(-50%);
-  cursor: pointer;
-  width: 100%;
-  left: 1%;
-}
 
-#siguiente {
-  justify-content: ce;
-  grid-row: 2/3;
-  grid-column: 3/4;
-  width: 100%;
-  transform: translateY(-50%);
-  cursor: pointer;
-  right: 1%;
-}
-#anterior img {
- width: 100%;
-}
-#anterior img:hover {
-  width: 120%;
- }
-#siguiente img {
-  width: 100%;
-}
-#siguiente img:hover {
-  width: 120%;
-}
+
 
 
 /*Formulario de ayuda*/

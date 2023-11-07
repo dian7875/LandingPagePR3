@@ -121,50 +121,41 @@ function loadService() {
 
   });
 
-};
+      //Fin de los servicios
+      //Carrusel de imagenes de proyectos
+      RYC.carrusel.forEach(carrusel => {
+        const imagenContainer = document.getElementById("imagenes");
+        const imagen = document.createElement("img");
+        imagen.src = carrusel.img;
+        const lisImg = this.document.createElement("li");
+        lisImg.appendChild(imagen);
+        imagenContainer.appendChild(lisImg);
+      });//Fin de imagenes de proyectos
+      //Animacion de scroll imagenes
+  
+      //Footer
+      this.document.getElementById("firstColum").innerHTML = `
+      <img class"FIcon" src="${RYC.Logo}"/>
+      <h2 class="FName"> ${RYC.companyName}</h2>
+      <p class="Fdescription">
 
-
-function loadImage() {
-  const RYC = RYCDATA;
-  //Carrusel de imagenes de proyectos
-  RYC.carrusel.forEach(carrusel => {
-    const imagenContainer = document.getElementById("imagenes");
-    const imagen = document.createElement("img");
-    imagen.src = carrusel.img;
-    const lisImg = this.document.createElement("li");
-    lisImg.appendChild(imagen);
-    imagenContainer.appendChild(lisImg);
-  });//Fin de imagenes de proyectos
-  //Animacion de scroll imagenes
-  const ListImg = document.getElementById("imagenes");
-  const anterior = document.getElementById("anterior");
-  const siguiente = document.getElementById("siguiente");
-  const porcentajeImagen = 33.3;
-  const numImagenes = ListImg.children.length;
-  let index = 0;
-
-  siguiente.addEventListener("click", () => {
-    index += 1;
-    if (index >= numImagenes) {
-      index = 0;
-    }
-    actualizarCarrusel();
-  });
-
-  anterior.addEventListener("click", () => {
-    index -= 1;
-    if (index < 0) {
-      index = numImagenes - 1;
-    }
-    actualizarCarrusel();
-  });
-
-  function actualizarCarrusel() {
-    const desplazamiento = -index * porcentajeImagen;
-    ListImg.style.transform = `translateX(${desplazamiento}%)`;
-  }
-};
+      ${RYC.description}.</p>
+      `
+      RYC.servicios.forEach((servicio) => {
+        const target = this.document.getElementById("SecondColum");
+        const fService = this.document.createElement("p");
+        fService.textContent = servicio.Name;
+        target.appendChild(fService);
 
 
 
-*/
+      }
+      )
+
+
+    });
+
+
+});
+
+
