@@ -108,6 +108,7 @@ body {
   list-style-type: none;
 }
 .Nav-a{
+  font-size: xx-large;
   text-decoration: none;
   color: var(--black);
 }
@@ -189,7 +190,6 @@ body {
 
 .ServCard:hover .ServiceInfo{
   visibility: visible;
-  text-shadow: 0 0 5px #020101;
   z-index: 80;
 }
 .ServCard:hover .ServicePreview img{
@@ -214,9 +214,10 @@ body {
   align-items: center;
 }
 .ServiceInfo p {
-  padding-top: 4%;
+  padding-top: 2%;
   width: 80%;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-size: xx-large;
 }
 .marcas {
   display: flex;
@@ -234,12 +235,13 @@ body {
   grid-area: GALL;
   width: 100%;
   height: 100%;
-  text-shadow: 0 0 5px #77c3cf;
+  text-shadow: 0 0 5px #fff;
 }
-#Gal {
+#Gal{
+  padding-top: 2%;
   width: 80%;
   height: auto;
-  overflow-y: auto; /* Agrega esto para habilitar el desplazamiento vertical */
+  overflow-y: auto;
   display: grid;
   grid-template-columns: 5% 1fr 5%;
   grid-template-rows: 1fr 1fr 1fr;
@@ -248,7 +250,7 @@ body {
   border-radius: 3%;
 }
 #SwapImg{
-  width: 20%;
+  width: 30%;
   padding-top: -20%;
 }
 
@@ -257,16 +259,10 @@ body {
   text-align: center;
 }
 #Gallery:hover .swapping {
-  display: none;
+  visibility: hidden;
 }
-/* Ocultar la barra de desplazamiento vertical en Google Chrome */
 #Gal::-webkit-scrollbar {
   width: 0;
-}
-
-/* Opcional: Estilo de fondo de la barra de desplazamiento */
-#Gal::-webkit-scrollbar-track {
-  background: transparent;
 }
 
 /* Opcional: Estilo del pulgar de la barra de desplazamiento */

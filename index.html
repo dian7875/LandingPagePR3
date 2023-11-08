@@ -55,9 +55,8 @@
       </ul>
     </span>
     <div class="swapping">
-      <img id="SwapImg" src="https://static-00.iconduck.com/assets.00/swipe-icon-441x512-677p5bz5.png" alt="">
-      <h3>Desliza para mas</h3>
-      <h4>Scrollea con las flechas en el teclado o con la pelota del mouse para pasar las imagenes</h4>
+      <img  id="SwapImg" src="https://static-00.iconduck.com/assets.00/swipe-icon-441x512-677p5bz5.png" alt="">
+      <h1>Desliza para mas</h1>
     </div>
   </span>
   <main id="Services">
@@ -119,5 +118,9 @@
   </footer>
 </body>
 <script src="./JS/main.js"></script>
-
+<script>
+  window.addEventListener('beforeunload', function () {
+      window.scrollTo(0, 0);
+  });
+</script>
 </html>

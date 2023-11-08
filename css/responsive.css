@@ -68,11 +68,18 @@
       transform:scale(2.6) ;
     }
     #anterior {
-      height: 100%;
+      display: flex;
+     align-items: center;
+     justify-content: center;
+      height: 160%;
      }
      
      #siguiente {
-       height: 100%;
+       height: 160%;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+        height: 160%;
      }
   .Font{
     
