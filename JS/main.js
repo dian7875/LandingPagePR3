@@ -1,8 +1,6 @@
 window.addEventListener("load", function (event) {
   console.log("'Todos los recursos terminaron de cargar!");
   loadContened();
-  //loadIntro();
-  //console.log(RYCDATA);
   fetchData();
 });
 
@@ -55,32 +53,50 @@ function loadFoot() {
 
   ${RYC.description}.</p>
   `
-  /*RYC.servicios.forEach((servicio) => {
+  RYC.services.forEach((services) => {
     const target = this.document.getElementById("SecondColum");
     const fService = this.document.createElement("p");
-    fService.textContent = servicio.Name;
+    fService.textContent = services.name;
     target.appendChild(fService);
   }
-  )*/
+  )
 };
 function loadContened() {
   fetchData()
     .then(() => {
      loadIntro();
      loadFoot();
-     // loadImage();
-      //loadService();
+     loadImage();
+    loadService();
     });
 }
-/*
+
+function loadImage(){
+  const RYC=RYCDATA;
+  RYC.Galery.forEach(Galery => {
+    const imagenContainer = document.getElementById("imagenes");
+    const imagen = document.createElement("img");
+    imagen.src = Galery.url;
+    const lisImg = this.document.createElement("li");
+    lisImg.appendChild(imagen);
+    imagenContainer.appendChild(lisImg);
+  });//Fin de imagenes de proyectos
+
+
+}
+
+document.getElementById("Logo").addEventListener("click", function (){
+location.reload();
+location.href="#Home";
+})
 
 function loadService() {
-  //Servicios de RYC
+  //servicess de RYC
   const RYC = RYCDATA;
   const servContainer = document.getElementById("Serv");
-  RYC.servicios.forEach((servicio) => {
+  RYC.services.forEach((services) => {
     const ServiceCard = document.createElement("span");
-    ServiceCard.id = servicio.ServId;
+    ServiceCard.id = services.id;
     ServiceCard.className = "ServCard";
 
     const serviceContainer = document.createElement("span");
@@ -89,30 +105,17 @@ function loadService() {
 
     const servicePreview = document.createElement("span");
     servicePreview.className = "ServicePreview";
-    if (parseInt(servicio.ServId) % 2 === 0) {
+    if (parseInt(services.id) % 2 === 0) {
     }
     servicePreview.innerHTML = `
-         <img src="${servicio.ico}">
-         <h3>${servicio.Name}</h3>`;
+         <img src="${services.icon}">
+         <h3>${services.name}</h3>`;
 
     const serviceInfo = document.createElement("span");
     serviceInfo.className = "ServiceInfo";
     serviceInfo.innerHTML = `
-             <p>${servicio.description}</p> `;
-
-    //Marcas relacionadas a los servicios
-    const marcasRelacionadas = RYC.Relacionados.filter((relacionado) => relacionado.id === servicio.ServId);
-    if (marcasRelacionadas.length > 0) {
-      const marca = document.createElement("span");
-      marca.className = "marcas";
-      marcasRelacionadas.forEach((relacionado) => {
-        const marcaImg = document.createElement("img");
-        marcaImg.src = relacionado.marca;
-        marca.appendChild(marcaImg);
-      });
-      serviceInfo.appendChild(marca);
-    }
-
+             <p>${services.description}</p> `;
+    //Marcas relacionadas a los servicess
     serviceContainer.appendChild(serviceInfo);
     serviceContainer.appendChild(servicePreview);
 
@@ -120,43 +123,6 @@ function loadService() {
     servContainer.appendChild(ServiceCard);
 
   });
-
-      //Fin de los servicios
-      //Carrusel de imagenes de proyectos
-      RYC.carrusel.forEach(carrusel => {
-        const imagenContainer = document.getElementById("imagenes");
-        const imagen = document.createElement("img");
-        imagen.src = carrusel.img;
-        const lisImg = this.document.createElement("li");
-        lisImg.appendChild(imagen);
-        imagenContainer.appendChild(lisImg);
-      });//Fin de imagenes de proyectos
-      //Animacion de scroll imagenes
-  
-      //Footer
-      this.document.getElementById("firstColum").innerHTML = `
-      <img class"FIcon" src="${RYC.Logo}"/>
-      <h2 class="FName"> ${RYC.companyName}</h2>
-      <p class="Fdescription">
-
-      ${RYC.description}.</p>
-      `
-      RYC.servicios.forEach((servicio) => {
-        const target = this.document.getElementById("SecondColum");
-        const fService = this.document.createElement("p");
-        fService.textContent = servicio.Name;
-        target.appendChild(fService);
+    };
 
 
-
-      }
-      )
-
-
-    });
-
-
-});
-
-
-*/
