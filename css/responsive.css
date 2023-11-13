@@ -56,6 +56,7 @@
 }
 
   .Gallery {
+    padding-bottom: 5%;
     margin-left: 25%;
     margin-right: 25%;
     width: 120%;
@@ -67,28 +68,15 @@
     #imagenes img:hover{
       transform:scale(2.6) ;
     }
-    #anterior {
-      display: flex;
-     align-items: center;
-     justify-content: center;
-      height: 160%;
-     }
-     
-     #siguiente {
-       height: 160%;
-       display: flex;
-       align-items: center;
-       justify-content: center;
-        height: 160%;
-     }
-  .Font{
-    
+
+  #About{
     width: 160%;
   }
   #firstColum img{
     visibility: hidden;
-
   }
- 
+  .swapping{
+    display: none;
+  }
 }
 
